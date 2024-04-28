@@ -1,7 +1,7 @@
 package org.robotgame.gui.GameControll.Entities;
 
 import org.junit.jupiter.api.Test;
-import org.robotgame.GameController.Entities.Base;
+import org.robotgame.controller.entities.Base;
 
 import org.junit.jupiter.api.BeforeEach;
 

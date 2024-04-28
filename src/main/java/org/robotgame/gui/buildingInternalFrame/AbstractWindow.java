@@ -1,13 +1,14 @@
 package org.robotgame.gui.buildingInternalFrame;
 
-import org.robotgame.GameController.GameVisualizer;
+import org.robotgame.controller.GameVisualizer;
 import org.robotgame.gui.LocalizationManager;
+import org.robotgame.serialization.Saveable;
 
 import javax.swing.*;
 import javax.swing.event.InternalFrameAdapter;
 import javax.swing.event.InternalFrameEvent;
 
-public abstract class AbstractWindow extends JInternalFrame {
+public abstract class AbstractWindow extends JInternalFrame implements Saveable {
 
     public AbstractWindow(String title, boolean resizable, boolean closable, boolean maximizable, boolean iconifiable) {
         super(title, resizable, closable, maximizable, iconifiable);
@@ -33,6 +34,8 @@ public abstract class AbstractWindow extends JInternalFrame {
 
     protected abstract void closeWindow();
 
+    public abstract GameVisualizer get_visualizer();
+
     @Override
     public void dispose() {
         closeWindow();
@@ -40,6 +43,4 @@ public abstract class AbstractWindow extends JInternalFrame {
     }
 
     public abstract void updateLabels();
-
-    public abstract GameVisualizer get_visualizer();
 }

@@ -2,7 +2,7 @@ package org.robotgame.gui.GameControll;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.robotgame.GameController.Entities.CameraMap;
+import org.robotgame.controller.entities.CameraMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 

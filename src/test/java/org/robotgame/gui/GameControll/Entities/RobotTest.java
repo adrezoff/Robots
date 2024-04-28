@@ -2,7 +2,7 @@ package org.robotgame.gui.GameControll.Entities;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.robotgame.GameController.Entities.Robot;
+import org.robotgame.controller.entities.Robot;
 
 import static org.junit.jupiter.api.Assertions.*;
 

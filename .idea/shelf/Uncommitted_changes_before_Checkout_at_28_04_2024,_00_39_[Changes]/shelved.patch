@@ -1,0 +1,363 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"aa8d1d09-12b1-4491-93e6-d3b6c0ed511d\" name=\"Changes\" comment=\"add test\">\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"task2\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 7\n}</component>\n  <component name=\"ProjectId\" id=\"2cxITTlqMopkLQ88lrgcEP1xnct\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Application.Main.executor\": \"Run\",\n    \"JUnit.CameraMapTest.executor\": \"Run\",\n    \"JUnit.GameVisualizerTest.BlockedMove.executor\": \"Run\",\n    \"JUnit.GameVisualizerTest.TestMove.executor\": \"Run\",\n    \"JUnit.GameVisualizerTest.executor\": \"Run\",\n    \"JUnit.GameVisualizerTest.testMoveRobot.executor\": \"Run\",\n    \"JUnit.GameVisualizerTest.testSetTargetPosition.executor\": \"Run\",\n    \"JUnit.LocalizationManagerTest.TestChangeLanguage.executor\": \"Run\",\n    \"JUnit.LocalizationManagerTest.TestGetString2.executor\": \"Run\",\n    \"JUnit.LocalizationManagerTest.executor\": \"Run\",\n    \"JUnit.LogWindowSourceTest.executor\": \"Run\",\n    \"JUnit.LogWindowSourceTest.testAppend.executor\": \"Run\",\n    \"JUnit.LogWindowSourceTest.testRegisterListener.executor\": \"Run\",\n    \"JUnit.LogWindowSourceTest.testSize.executor\": \"Run\",\n    \"JUnit.LogWindowSourceTest.testUnregisterListener.executor\": \"Run\",\n    \"JUnit.LogWindowSourceTest.testValidDeque.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"git-widget-placeholder\": \"task2\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/Users/andrey/IdeaProjects/Robots/src/test/java/org/robotgame/gui\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\",\n    \"run.code.analysis.last.selected.profile\": \"pProject Default\",\n    \"settings.editor.selected.configurable\": \"org.infernus.idea.checkstyle.CheckStyleConfigurable\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/test/java/org/robotgame/gui\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/map\" />\n      <recent name=\"$PROJECT_DIR$/src\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources\" />\n      <recent name=\"$PROJECT_DIR$/src/main/java\" />\n    </key>\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\n      <recent name=\"org.robotgame.gui\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"JUnit.MinimapTest\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.robotgame.Main\" />\n      <module name=\"test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.robotgame.gui.buildingInternalFrame.GameController.Entities.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"CameraMapTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.robotgame.gui.GameControll.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"org.robotgame.gui.GameControll\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.robotgame.gui.GameControll.CameraMapTest\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"CameraMapTest.testUpdateCameraMapPosition\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.robotgame.gui.GameControll.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"org.robotgame.gui.GameControll\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.robotgame.gui.GameControll.CameraMapTest\" />\n      <option name=\"METHOD_NAME\" value=\"testUpdateCameraMapPosition\" />\n      <option name=\"TEST_OBJECT\" value=\"method\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"LocalizationManagerTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.robotgame.gui.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"org.robotgame.gui\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.robotgame.gui.LocalizationManagerTest\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"MinimapTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"test\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.robotgame.gui.GameControll.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"org.robotgame.gui.GameControll\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.robotgame.gui.GameControll.MinimapTest\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"JUnit.MinimapTest\" />\n        <item itemvalue=\"JUnit.CameraMapTest\" />\n        <item itemvalue=\"JUnit.CameraMapTest.testUpdateCameraMapPosition\" />\n        <item itemvalue=\"JUnit.LocalizationManagerTest\" />\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-20.0.2-corretto-20.0.2.1-4caba194b151-d89c1816\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"aa8d1d09-12b1-4491-93e6-d3b6c0ed511d\" name=\"Changes\" comment=\"\" />\n      <created>1709046810907</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1709046810907</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"return back and replace struct in log queue\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709362167881</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709362167881</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"refactor code\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709903707065</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709903707065</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"finish coding task1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1710184562001</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1710184562001</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"fix bug\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1710229702790</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1710229702790</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"fix bug task1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1710269701255</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1710269701255</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Begin task2: add closable and AbstractWindow in each internal frame. Add button &quot;Exit&quot; in menubar in main frame\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1710959495312</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1710959495312</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"fix bugs with exit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711313599633</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711313599633</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"add realtime repaint localization\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711381953424</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711381953424</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"add test\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711447600116</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711447600116</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"fix bugs\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712475783732</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712475783732</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"add map, and moving entries\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712496677003</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712496677004</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"add test\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712599343065</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712599343065</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"13\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"return back and replace struct in log queue\" />\n    <MESSAGE value=\"refactor code\" />\n    <MESSAGE value=\"finish coding task1\" />\n    <MESSAGE value=\"fix bug\" />\n    <MESSAGE value=\"fix bug task1\" />\n    <MESSAGE value=\"Begin task2: add closable and AbstractWindow in each internal frame. Add button &quot;Exit&quot; in menubar in main frame\" />\n    <MESSAGE value=\"fix bugs with exit\" />\n    <MESSAGE value=\"add realtime repaint localization\" />\n    <MESSAGE value=\"fix bugs\" />\n    <MESSAGE value=\"add map, and moving entries\" />\n    <MESSAGE value=\"add test\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"add test\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,8 +4,21 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="add test">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" afterDir="false" />
++    <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="add other test">
++      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/Serialization/DefaultProfileManager.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/Serialization/ProfileManager.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/CameraMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Entities/CameraMap.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/GameVisualizer.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Minimap.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/LocalizationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/LocalizationManager.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$1.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$2.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$3.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$4.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -15,8 +28,8 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="Interface" />
+         <option value="Class" />
++        <option value="Interface" />
+       </list>
+     </option>
+   </component>
+@@ -43,36 +56,39 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Main.executor": "Run",
+-    "JUnit.CameraMapTest.executor": "Run",
+-    "JUnit.GameVisualizerTest.BlockedMove.executor": "Run",
+-    "JUnit.GameVisualizerTest.TestMove.executor": "Run",
+-    "JUnit.GameVisualizerTest.executor": "Run",
+-    "JUnit.GameVisualizerTest.testMoveRobot.executor": "Run",
+-    "JUnit.GameVisualizerTest.testSetTargetPosition.executor": "Run",
+-    "JUnit.LocalizationManagerTest.TestChangeLanguage.executor": "Run",
+-    "JUnit.LocalizationManagerTest.TestGetString2.executor": "Run",
+-    "JUnit.LocalizationManagerTest.executor": "Run",
+-    "JUnit.LogWindowSourceTest.executor": "Run",
+-    "JUnit.LogWindowSourceTest.testAppend.executor": "Run",
+-    "JUnit.LogWindowSourceTest.testRegisterListener.executor": "Run",
+-    "JUnit.LogWindowSourceTest.testSize.executor": "Run",
+-    "JUnit.LogWindowSourceTest.testUnregisterListener.executor": "Run",
+-    "JUnit.LogWindowSourceTest.testValidDeque.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "task2",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "/Users/andrey/IdeaProjects/Robots/src/test/java/org/robotgame/gui",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "run.code.analysis.last.selected.profile": "pProject Default",
+-    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.BaseTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.CameraMapTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.CameraMapTest.testUpdateCameraMapPosition.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.GameVisualizerTest.BlockedMove.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.GameVisualizerTest.TestMove.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.GameVisualizerTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.GameVisualizerTest.testMoveRobot.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.GameVisualizerTest.testSetTargetPosition.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LocalizationManagerTest.TestChangeLanguage.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LocalizationManagerTest.TestGetString2.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LocalizationManagerTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LogWindowSourceTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LogWindowSourceTest.testAppend.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LogWindowSourceTest.testRegisterListener.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LogWindowSourceTest.testSize.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LogWindowSourceTest.testUnregisterListener.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.LogWindowSourceTest.testValidDeque.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MinimapTest.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;task2&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/Users/andrey/IdeaProjects/Robots/src/test/java/org/robotgame/gui&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/test/java/org/robotgame/gui" />
+@@ -87,7 +103,7 @@
+       <recent name="org.robotgame.gui" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JUnit.MinimapTest">
++  <component name="RunManager" selected="Application.Main">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="org.robotgame.Main" />
+       <module name="test" />
+@@ -101,22 +117,22 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CameraMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="test" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.robotgame.gui.GameControll.*" />
++          <option name="PATTERN" value="org.robotgame.gui.GameControll.Entities.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
+-      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.CameraMapTest" />
++      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll.Entities" />
++      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.Entities.BaseTest" />
+       <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CameraMapTest.testUpdateCameraMapPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="CameraMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="test" />
+       <extension name="coverage">
+         <pattern>
+@@ -126,23 +142,23 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
+       <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.CameraMapTest" />
+-      <option name="METHOD_NAME" value="testUpdateCameraMapPosition" />
+-      <option name="TEST_OBJECT" value="method" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="LocalizationManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="CameraMapTest.testUpdateCameraMapPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="test" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.robotgame.gui.*" />
++          <option name="PATTERN" value="org.robotgame.gui.GameControll.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="org.robotgame.gui" />
+-      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.LocalizationManagerTest" />
+-      <option name="TEST_OBJECT" value="class" />
++      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
++      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.CameraMapTest" />
++      <option name="METHOD_NAME" value="testUpdateCameraMapPosition" />
++      <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -164,11 +180,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Main" />
++        <item itemvalue="JUnit.BaseTest" />
+         <item itemvalue="JUnit.MinimapTest" />
+         <item itemvalue="JUnit.CameraMapTest" />
+         <item itemvalue="JUnit.CameraMapTest.testUpdateCameraMapPosition" />
+-        <item itemvalue="JUnit.LocalizationManagerTest" />
+-        <item itemvalue="Application.Main" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -284,7 +300,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1712599343065</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="add other test">
++      <option name="closed" value="true" />
++      <created>1712600142681</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1712600142681</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -310,6 +334,7 @@
+     <MESSAGE value="fix bugs" />
+     <MESSAGE value="add map, and moving entries" />
+     <MESSAGE value="add test" />
+-    <option name="LAST_COMMIT_MESSAGE" value="add test" />
++    <MESSAGE value="add other test" />
++    <option name="LAST_COMMIT_MESSAGE" value="add other test" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.robotgame.gui.GameControll;\n\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.robotgame.GameController.CameraMap;\n\nimport static org.junit.jupiter.api.Assertions.*;\n\npublic class CameraMapTest {\n    private CameraMap cameraMap;\n\n    @BeforeEach\n    void setUp() {\n        cameraMap = new CameraMap(0, 0, 800, 600, 2000, 1500);\n    }\n\n    @Test\n    void testConstructor() {\n        assertEquals(0, cameraMap.getX());\n        assertEquals(0, cameraMap.getY());\n        assertEquals(800, cameraMap.getScreenWidth());\n        assertEquals(600, cameraMap.getScreenHeight());\n        assertEquals(2000, cameraMap.getMapSizeX());\n        assertEquals(1500, cameraMap.getMapSizeY());\n    }\n\n    @Test\n    void testSetX() {\n        cameraMap.setX(100);\n        assertEquals(100, cameraMap.getX());\n    }\n\n    @Test\n    void testSetY() {\n        cameraMap.setY(200);\n        assertEquals(200, cameraMap.getY());\n    }\n\n    @Test\n    void testSetMapSizeX() {\n        cameraMap.setMapSizeX(3000);\n        assertEquals(3000, cameraMap.getMapSizeX());\n    }\n\n    @Test\n    void testSetMapSizeY() {\n        cameraMap.setMapSizeY(2500);\n        assertEquals(2500, cameraMap.getMapSizeY());\n    }\n\n    @Test\n    void testSetScreenSize() {\n        cameraMap.setScreenSize(1024, 768);\n        assertEquals(1024, cameraMap.getScreenWidth());\n        assertEquals(768, cameraMap.getScreenHeight());\n    }\n\n    @Test\n    void testUpdateCameraMapPosition() {\n        cameraMap.updateCameraMapPosition(50, 50);\n        assertEquals(0, cameraMap.getX());\n        assertEquals(0, cameraMap.getY());\n\n        cameraMap.updateCameraMapPosition(1500, 900);\n        assertEquals(1100, cameraMap.getX());\n        assertEquals(600, cameraMap.getY());\n\n        cameraMap.updateCameraMapPosition(2000, 1500);\n        assertEquals(1200, cameraMap.getX());\n        assertEquals(900, cameraMap.getY());\n    }\n}\n\n
+===================================================================
+diff --git a/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java b/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java
+--- a/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java	
++++ b/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java	
+@@ -2,7 +2,7 @@
+ 
+ import org.junit.jupiter.api.BeforeEach;
+ import org.junit.jupiter.api.Test;
+-import org.robotgame.GameController.CameraMap;
++import org.robotgame.GameController.Entities.CameraMap;
+ 
+ import static org.junit.jupiter.api.Assertions.*;
+ 
+Index: src/main/java/org/robotgame/GameController/Minimap.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.robotgame.GameController;\n\nimport org.robotgame.GameController.GameVisualizer;\n\nimport javax.swing.*;\nimport java.awt.*;\nimport java.awt.event.ComponentAdapter;\nimport java.awt.event.ComponentEvent;\nimport java.io.File;\nimport java.util.Timer;\nimport java.util.TimerTask;\nimport java.io.IOException;\nimport javax.imageio.ImageIO;\n\npublic class Minimap extends JPanel {\n    private final Timer m_timer = initTimer();\n    private GameVisualizer gameVisualizer;\n    private Image backgroundImage;\n\n    private static Timer initTimer() {\n        Timer timer = new Timer(\"events generator\", true);\n        return timer;\n    }\n\n    public Minimap(GameVisualizer gameVisualizer) {\n        this.gameVisualizer = gameVisualizer;\n\n        try {\n            backgroundImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream(\"map/map.jpg\"));\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        m_timer.schedule(new TimerTask() {\n            @Override\n            public void run() {\n                onRedrawEvent();\n            }\n        }, 0, 7);\n        m_timer.schedule(new TimerTask() {\n            @Override\n            public void run() {\n                onModelUpdateEvent();\n            }\n        }, 0, 5);\n\n        addComponentListener(new ComponentAdapter() {\n            @Override\n            public void componentResized(ComponentEvent e) {\n                super.componentResized(e);\n                updateScreenSize();\n                repaint();\n            }\n        });\n\n        setDoubleBuffered(true);\n        setFocusable(true);\n    }\n\n    protected void onRedrawEvent() {\n        EventQueue.invokeLater(this::repaint);\n    }\n\n    protected void onModelUpdateEvent() {\n\n    }\n\n    public void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        Graphics2D g2d = (Graphics2D) g;\n\n        if (backgroundImage != null) {\n            g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);\n        }\n\n        double x = gameVisualizer.getRobot().getPositionX();\n        double y = gameVisualizer.getRobot().getPositionY();\n\n        drawRobot(g2d, x, y);\n\n        if (gameVisualizer.getBase().getBaseBuilt()) {\n            x = gameVisualizer.getBase().getPositionX();\n            y = gameVisualizer.getBase().getPositionY();\n\n            drawBase(g2d, x, y);\n        }\n    }\n\n\n    private static void fillOval(Graphics g, int centerX, int centerY, int diam1, int diam2) {\n        g.fillOval(centerX - diam1 / 2, centerY - diam2 / 2, diam1, diam2);\n    }\n\n    private static void drawOval(Graphics g, int centerX, int centerY, int diam1, int diam2) {\n        g.drawOval(centerX - diam1 / 5, centerY - diam2 / 5, diam1, diam2);\n    }\n\n    private void drawRobot(Graphics2D g, double x, double y){\n        // Определение масштабирования координат робота\n        double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();\n\n        // Преобразование координат робота с учетом масштабирования\n        int robotCenterX = (int) (x * scale);\n        int robotCenterY = (int) (y * scale);\n\n        // Нарисовать робота на миникарте\n        g.setColor(Color.GREEN);\n        fillOval(g, robotCenterX, robotCenterY, 5, 5);\n        g.setColor(Color.BLACK);\n        drawOval(g, robotCenterX, robotCenterY, 5, 5);\n    }\n    private void drawBase(Graphics2D g, double x, double y){\n        // Определение масштабирования координат базы\n        double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();\n\n        // Преобразование координат базы с учетом масштабирования\n        int baseCenterX = (int) (x * scale);\n        int baseCenterY = (int) (y * scale);\n\n        //определение HP базы\n        int hpBase = gameVisualizer.getBase().getHealthPoint();\n\n        // Нарисовать базу на миникарте\n        g.setColor(Color.WHITE);\n        g.fillRect(baseCenterX-10, baseCenterY-5, 25, 2);\n        if (hpBase==0) {g.setColor(Color.RED);}\n        else if(hpBase<50){g.setColor(Color.ORANGE);}\n        else {g.setColor(Color.GREEN);}\n        g.fillRect(baseCenterX, baseCenterY, 5, 5);\n        g.fillRect(baseCenterX-10, baseCenterY-5, (int)(25*(hpBase/100.0)), 2);\n        g.setColor(Color.BLACK);\n        g.drawRect(baseCenterX, baseCenterY, 5, 5);\n        g.drawRect(baseCenterX-10, baseCenterY-5, 25, 2);\n    }\n\n    private void updateScreenSize() {\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/org/robotgame/GameController/Minimap.java b/src/main/java/org/robotgame/GameController/Minimap.java
+--- a/src/main/java/org/robotgame/GameController/Minimap.java	
++++ b/src/main/java/org/robotgame/GameController/Minimap.java	
+@@ -1,7 +1,5 @@
+ package org.robotgame.GameController;
+ 
+-import org.robotgame.GameController.GameVisualizer;
+-
+ import javax.swing.*;
+ import java.awt.*;
+ import java.awt.event.ComponentAdapter;
+Index: src/main/java/org/robotgame/GameController/GameVisualizer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.robotgame.GameController;\n\nimport org.robotgame.GameController.Entities.Base;\nimport org.robotgame.GameController.Entities.Robot;\nimport org.robotgame.GameController.Entities.Target;\n\nimport java.awt.*;\nimport java.awt.event.*;\nimport java.awt.geom.AffineTransform;\nimport java.io.File;\nimport java.io.IOException;\nimport java.util.Timer;\nimport java.util.TimerTask;\nimport javax.imageio.ImageIO;\nimport javax.swing.*;\n\npublic class GameVisualizer extends JPanel {\n    private final Timer m_timer = initTimer();\n    private final Robot robot;\n    private final Target target;\n    private final Base base;\n    private final CameraMap cameraMap;\n    private Image backgroundImage;\n\n    private static Timer initTimer() {\n        Timer timer = new Timer(\"events generator\", true);\n        return timer;\n    }\n\n    public GameVisualizer(int width, int height) {\n        int startRobotX = 100;\n        int startRobotY = 100;\n        robot = new Robot(startRobotX, startRobotY, 0);\n        target = new Target(startRobotX, startRobotY);\n        base = new Base();\n        cameraMap = new CameraMap(startRobotX, startRobotY, width, height,2000, 2000);\n\n\n        try {\n            //backgroundImage = ImageIO.read(new File(\"src/main/resources/map/map.jpg\"));\n            backgroundImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream(\"map/map.jpg\"));\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        m_timer.schedule(new TimerTask() {\n            @Override\n            public void run() {\n                onRedrawEvent();\n            }\n        }, 0, 7);\n        m_timer.schedule(new TimerTask() {\n            @Override\n            public void run() {\n                onModelUpdateEvent();\n            }\n        }, 0, 5);\n        m_timer.schedule(new TimerTask() {\n            @Override\n            public void run() {\n                base.takePositionRobot(robot.getPositionX(), robot.getPositionY());\n            }\n        }, 0,500);\n        addMouseListener(new MouseAdapter() {\n            @Override\n            public void mouseClicked(MouseEvent e) {\n                setTargetPosition(e.getX(), e.getY());\n                repaint();\n            }\n        });\n\n        addKeyListener(new KeyAdapter() {\n            @Override\n            public void keyReleased(KeyEvent e) {\n                super.keyTyped(e);\n                if (e.getKeyText(e.getKeyCode()).equals(\"B\") && !(base.getBaseBuilt())){\n                    base.buildBase(robot.getPositionX(),robot.getPositionY());\n                };\n            }\n        });\n\n        addComponentListener(new ComponentAdapter() {\n            @Override\n            public void componentResized(ComponentEvent e) {\n                super.componentResized(e);\n                updateScreenSize();\n                repaint();\n            }\n        });\n\n        setDoubleBuffered(true);\n        setFocusable(true);\n    }\n\n    public void setTargetPosition(int x, int y) {\n        x = (int) (cameraMap.getX() + x);\n        y = (int) (cameraMap.getY() + y);\n\n        if (this.getWidth() != 0 && this.getHeight() != 0) {\n            x = (int) applyLimits(x, 0, cameraMap.getMapSizeX());\n            y = (int) applyLimits(y, 0, cameraMap.getMapSizeY());\n        }\n        if (distance(x, y, target.getPositionX(), target.getPositionY()) < 5)\n            return;\n\n        target.setPositionX(x);\n        target.setPositionY(y);\n    }\n\n\n\n    protected void onRedrawEvent() {\n        EventQueue.invokeLater(this::repaint);\n    }\n\n    private static double distance(double x1, double y1, double x2, double y2) {\n        double diffX = x1 - x2;\n        double diffY = y1 - y2;\n        return Math.sqrt(diffX * diffX + diffY * diffY);\n    }\n\n    private static double angleTo(double fromX, double fromY, double toX, double toY) {\n        double diffX = toX - fromX;\n        double diffY = toY - fromY;\n\n        return asNormalizedRadians(Math.atan2(diffY, diffX));\n    }\n\n    public void onModelUpdateEvent() {\n        double distance = distance(target.getPositionX(), target.getPositionY(), robot.getPositionX(), robot.getPositionY());\n        if (distance < 1) {\n            return;\n        }\n\n        double angleToTarget = angleTo(robot.getPositionX(), robot.getPositionY(), target.getPositionX(), target.getPositionY());\n\n        double angleDifference;\n        if (Math.abs(angleToTarget - robot.getDirection()) > Math.exp(-17)) {\n            angleDifference = angleToTarget - robot.getDirection();\n        } else {\n            angleDifference = Math.exp(-16);\n        }\n\n        if (Math.abs(angleDifference) > Math.PI) {\n            angleDifference -= Math.signum(angleDifference) * 2 * Math.PI;\n        }\n        double angularVelocity = robot.getMaxAngularVelocity() * angleDifference;\n\n        moveRobot(angularVelocity, 5);\n\n    }\n\n    private static double applyLimits(double value, double min, double max) {\n        if (value < min)\n            return min;\n        if (value > max)\n            return max;\n        return value;\n    }\n\n    private void moveRobot(double angularVelocity, double duration) {\n        double velocity = robot.getMaxVelocity();\n        double newX = robot.getPositionX() + velocity / angularVelocity *\n                (Math.sin(robot.getDirection() + angularVelocity * duration) -\n                        Math.sin(robot.getDirection()));\n        if (!Double.isFinite(newX)) {\n            newX = robot.getPositionX() + velocity * duration * Math.cos(robot.getDirection());\n        }\n        double newY = robot.getPositionY() - velocity / angularVelocity *\n                (Math.cos(robot.getDirection() + angularVelocity * duration) -\n                        Math.cos(robot.getDirection()));\n        if (!Double.isFinite(newY)) {\n            newY = robot.getPositionY() + velocity * duration * Math.sin(robot.getDirection());\n        }\n        robot.setPositionX(applyLimits(newX, 0, cameraMap.getMapSizeX()));\n        robot.setPositionY(applyLimits(newY, 0, cameraMap.getMapSizeY()));\n\n        double newDirection = asNormalizedRadians(robot.getDirection() + angularVelocity * duration);\n        robot.setDirection(newDirection);\n\n        cameraMap.updateCameraMapPosition(robot.getPositionX(), robot.getPositionY());\n    }\n\n    private static double asNormalizedRadians(double angle) {\n        while (angle < 0) {\n            angle += 2 * Math.PI;\n        }\n        while (angle >= 2 * Math.PI) {\n            angle -= 2 * Math.PI;\n        }\n        return angle;\n    }\n\n    private static int round(double value) {\n        return (int) (value + 0.5);\n    }\n\n    public void paintComponent(Graphics g) {\n        super.paintComponent(g);\n        Graphics2D g2d = (Graphics2D) g;\n\n        // Получить текущие координаты камеры\n        double cameraX = cameraMap.getX();\n        double cameraY = cameraMap.getY();\n\n        drawBackgroundImage(g2d, cameraX, cameraY);\n        drawRobot(g2d, robot.getPositionX() - cameraX, robot.getPositionY() - cameraY, robot.getDirection());\n        drawTarget(g2d, target.getPositionX() - cameraX, target.getPositionY() - cameraY);\n        if (base.getBaseBuilt()) {\n            drawBase(g2d, base.getPositionX() - cameraX, base.getPositionY() - cameraY);\n        }\n    }\n\n\n\n    private static void fillOval(Graphics g, int centerX, int centerY, int diam1, int diam2) {\n        g.fillOval(centerX - diam1 / 2, centerY - diam2 / 2, diam1, diam2);\n    }\n\n    private static void drawOval(Graphics g, int centerX, int centerY, int diam1, int diam2) {\n        g.drawOval(centerX - diam1 / 2, centerY - diam2 / 2, diam1, diam2);\n    }\n\n    private void drawRobot(Graphics2D g, double x, double y, double direction) {\n\n        int robotCenterX = round(x);\n        int robotCenterY = round(y);\n\n        AffineTransform originalTransform = g.getTransform();\n\n        g.rotate(direction, robotCenterX, robotCenterY);\n\n        g.setColor(Color.CYAN);\n        fillOval(g, robotCenterX, robotCenterY, 30, 10);\n        g.setColor(Color.BLACK);\n        drawOval(g, robotCenterX, robotCenterY, 30, 10);\n        g.setColor(Color.WHITE);\n        fillOval(g, robotCenterX + 10, robotCenterY, 5, 5);\n        g.setColor(Color.BLACK);\n        drawOval(g, robotCenterX + 10, robotCenterY, 5, 5);\n\n        g.setTransform(originalTransform);\n    }\n\n    private void drawTarget(Graphics2D g, double x, double y) {\n        int targetCenterX = round(x);\n        int targetCenterY = round(y);\n\n        g.setColor(Color.RED);\n        fillOval(g, targetCenterX, targetCenterY, 5, 5);\n        g.setColor(Color.BLACK);\n        drawOval(g, targetCenterX, targetCenterY, 5, 5);\n    }\n\n    private void drawBase(Graphics2D g, double x, double y){\n        int baseCenterX = round(x);\n        int baseCenterY = round(y);\n\n        if (base.getHealthPoint() == 0) {g.setColor(Color.GRAY);}\n        else if (base.getHealthPoint()<50){g.setColor(Color.RED);}\n        else {g.setColor(Color.ORANGE);}\n        g.fill3DRect(baseCenterX-25, baseCenterY-25, 50, 50, true);\n        g.setColor(Color.BLACK);\n        g.draw3DRect(baseCenterX-25, baseCenterY-25, 50, 50, true);\n        g.drawRect(baseCenterX-20, baseCenterY-20, 40, 5);\n        g.setColor(Color.WHITE);\n        g.fillRect(baseCenterX-20, baseCenterY-20, 40, 5);\n        g.setColor(Color.GREEN);\n        g.fillRect(baseCenterX-20, baseCenterY-20, (int)(40*(base.getHealthPoint()/100.0)), 5);\n\n    }\n\n    private void drawBackgroundImage(Graphics2D g, double cameraX, double cameraY) {\n        int destX = 0; // Координата X верхнего левого угла области\n        int destY = 0; // Координата Y верхнего левого угла области\n        int destWidth = getWidth(); // Ширина области\n        int destHeight = getHeight(); // Высота области\n\n        int srcX = (int) cameraX; // Начальная координата X на изображении\n        int srcY = (int) cameraY; // Начальная координата Y на изображении\n        int srcWidth = getWidth(); // Ширина области на изображении\n        int srcHeight = getHeight(); // Высота области на изображении\n\n        g.drawImage(backgroundImage, destX, destY, destWidth, destHeight, srcX, srcY, srcX + srcWidth, srcY + srcHeight, this);\n    }\n\n    public void updateScreenSize(){\n        cameraMap.setScreenSize(getWidth(), getHeight());\n    }\n\n    public Point getTargetPoint() {\n        return new Point(target.getPositionX(), target.getPositionY());\n    }\n    public Point getRobotPoint() {\n        return new Point((int)robot.getPositionX(), (int)robot.getPositionY());\n    }\n    public Robot getRobot(){\n        return robot;\n    }\n    public CameraMap getCameraMap(){\n        return cameraMap;\n    }\n    public Base getBase(){\n        return base;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/org/robotgame/GameController/GameVisualizer.java b/src/main/java/org/robotgame/GameController/GameVisualizer.java
+--- a/src/main/java/org/robotgame/GameController/GameVisualizer.java	
++++ b/src/main/java/org/robotgame/GameController/GameVisualizer.java	
+@@ -1,13 +1,13 @@
+ package org.robotgame.GameController;
+ 
+ import org.robotgame.GameController.Entities.Base;
++import org.robotgame.GameController.Entities.CameraMap;
+ import org.robotgame.GameController.Entities.Robot;
+ import org.robotgame.GameController.Entities.Target;
+ 
+ import java.awt.*;
+ import java.awt.event.*;
+ import java.awt.geom.AffineTransform;
+-import java.io.File;
+ import java.io.IOException;
+ import java.util.Timer;
+ import java.util.TimerTask;
+@@ -199,7 +199,6 @@
+         super.paintComponent(g);
+         Graphics2D g2d = (Graphics2D) g;
+ 
+-        // Получить текущие координаты камеры
+         double cameraX = cameraMap.getX();
+         double cameraY = cameraMap.getY();
+ 
+@@ -271,15 +270,15 @@
+     }
+ 
+     private void drawBackgroundImage(Graphics2D g, double cameraX, double cameraY) {
+-        int destX = 0; // Координата X верхнего левого угла области
+-        int destY = 0; // Координата Y верхнего левого угла области
+-        int destWidth = getWidth(); // Ширина области
+-        int destHeight = getHeight(); // Высота области
++        int destX = 0;
++        int destY = 0;
++        int destWidth = getWidth();
++        int destHeight = getHeight();
+ 
+-        int srcX = (int) cameraX; // Начальная координата X на изображении
+-        int srcY = (int) cameraY; // Начальная координата Y на изображении
+-        int srcWidth = getWidth(); // Ширина области на изображении
+-        int srcHeight = getHeight(); // Высота области на изображении
++        int srcX = (int) cameraX;
++        int srcY = (int) cameraY;
++        int srcWidth = getWidth();
++        int srcHeight = getHeight();
+ 
+         g.drawImage(backgroundImage, destX, destY, destWidth, destHeight, srcX, srcY, srcX + srcWidth, srcY + srcHeight, this);
+     }
+Index: src/main/java/org/robotgame/GameController/CameraMap.java
+===================================================================
+diff --git a/src/main/java/org/robotgame/GameController/CameraMap.java b/src/main/java/org/robotgame/GameController/Entities/CameraMap.java
+rename from src/main/java/org/robotgame/GameController/CameraMap.java
+rename to src/main/java/org/robotgame/GameController/Entities/CameraMap.java
+--- a/src/main/java/org/robotgame/GameController/CameraMap.java	
++++ b/src/main/java/org/robotgame/GameController/Entities/CameraMap.java	
+@@ -1,4 +1,4 @@
+-package org.robotgame.GameController;
++package org.robotgame.GameController.Entities;
+ 
+ public class CameraMap {
+     private double x;
+Index: src/main/java/org/robotgame/gui/LocalizationManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.robotgame.gui;\n\nimport java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.util.Locale;\nimport java.util.Properties;\nimport java.util.ResourceBundle;\n\npublic class LocalizationManager {\n    private static ResourceBundle messages;\n    private static final String PROPERTIES_FILE_PATH = \"config.properties\";\n    private static final String BUNDLE_BASE_NAME = \"messages\";\n    private static final Object lock = new Object();\n\n\n    static {\n        loadResourceBundle();\n    }\n\n    private static void loadResourceBundle() {\n        Properties props = new Properties();\n        try {\n            InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH);\n            synchronized (lock) {\n                props.load(in);\n                in.close();\n            }\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n\n        Locale locale = switch (props.getProperty(\"Language\")) {\n            case \"EN\" -> Locale.ENGLISH;\n            case \"RU\" -> new Locale(\"ru\");\n            default -> Locale.getDefault();\n        };\n        messages = ResourceBundle.getBundle(BUNDLE_BASE_NAME, locale);\n    }\n\n    public static String getString(String key) {\n        return messages.getString(key);\n    }\n\n    public static synchronized boolean changeLanguage(String language) {\n        Properties props = new Properties();\n        try (FileOutputStream out = new FileOutputStream(LocalizationManager.class.getClassLoader().getResource(PROPERTIES_FILE_PATH).getFile());\n             InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH)) {\n            synchronized (lock) {\n                props.load(in);\n                props.setProperty(\"Language\", language);\n                props.store(out, null);\n            }\n            loadResourceBundle();\n            return true;\n        } catch (IOException e) {\n            e.printStackTrace();\n            return false;\n        }\n    }\n}
+===================================================================
+diff --git a/src/main/java/org/robotgame/gui/LocalizationManager.java b/src/main/java/org/robotgame/gui/LocalizationManager.java
+--- a/src/main/java/org/robotgame/gui/LocalizationManager.java	
++++ b/src/main/java/org/robotgame/gui/LocalizationManager.java	
+@@ -1,6 +1,5 @@
+ package org.robotgame.gui;
+ 
+-import java.io.FileInputStream;
+ import java.io.FileOutputStream;
+ import java.io.IOException;
+ import java.io.InputStream;
+@@ -22,8 +21,8 @@
+     private static void loadResourceBundle() {
+         Properties props = new Properties();
+         try {
+-            InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH);
+             synchronized (lock) {
++                InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH);
+                 props.load(in);
+                 in.close();
+             }
+Index: src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.robotgame.gui.buildingMainFrame;\n\nimport org.robotgame.gui.LocalizationManager;\nimport org.robotgame.gui.buildingInternalFrame.AbstractWindow;\nimport org.robotgame.gui.buildingInternalFrame.GameWindow;\nimport org.robotgame.gui.buildingInternalFrame.LogWindow;\nimport org.robotgame.gui.buildingInternalFrame.MiniMapWindow;\nimport org.robotgame.log.Logger;\n\nimport javax.swing.*;\nimport java.awt.event.WindowAdapter;\nimport java.awt.event.WindowEvent;\n\npublic class MainApplicationFrame extends JFrame {\n    private static JDesktopPane desktopPane = null;\n    AbstractWindow logWindow;\n    AbstractWindow gameWindow;\n    AbstractWindow minimapWindow;\n\n    public MainApplicationFrame() {\n        desktopPane = new JDesktopPane();\n\n        logWindow = createLogWindow();\n        gameWindow = createGameWindow();\n        minimapWindow = createMiniMapWindow();\n\n        setContentPane(desktopPane);\n\n        addWindow(logWindow);\n        addWindow(gameWindow);\n        addWindow(minimapWindow);\n\n        setJMenuBar(MenuBarBuilder.buildMenuBar(this));\n\n        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);\n        addWindowListener(new WindowAdapter() {\n            @Override\n            public void windowClosing(WindowEvent e) {\n                Object[] options = {LocalizationManager.getString(\"yes\"),\n                        LocalizationManager.getString(\"no\")};\n\n                int result = JOptionPane.showOptionDialog(null,\n                        LocalizationManager.getString(\"window.closing.message\"),\n                        LocalizationManager.getString(\"confirmation\"),\n                        JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE,\n                        null, options, options[0]);\n                if (result == JOptionPane.YES_OPTION) {\n                    closeAllWindows();\n                    dispose();\n                    System.exit(0);\n                }\n            }\n        });\n    }\n\n    protected AbstractWindow createLogWindow() {\n        AbstractWindow logWindow = new LogWindow(Logger.getDefaultLogSource());\n        logWindow.setLocation(10, 10); // Расположение в верхнем левом углу\n        logWindow.setSize(300, 800);\n        Logger.debug(LocalizationManager.getString(\"logger.logsAreRunning\"));\n        return logWindow;\n    }\n\n    protected AbstractWindow createGameWindow() {\n        int gameWindowWidth = 600;\n        int gameWindowHeight = 600;\n        AbstractWindow gameWindow = new GameWindow(gameWindowWidth, gameWindowHeight);\n        gameWindow.setSize(gameWindowWidth, gameWindowHeight);\n        gameWindow.setLocation(320, 10);\n        return gameWindow;\n    }\n\n    protected AbstractWindow createMiniMapWindow() {\n        int minimapWindowWidth = 200;\n        int minimapWindowHeight = 200;\n        AbstractWindow minimapWindow = new MiniMapWindow(this.gameWindow);\n        minimapWindow.setSize(minimapWindowWidth, minimapWindowHeight);\n        minimapWindow.setLocation(930, 10);\n        return minimapWindow;\n    }\n\n\n    protected void addWindow(JInternalFrame frame) {\n        desktopPane.add(frame);\n        frame.setVisible(true);\n    }\n\n    private void closeAllWindows() {\n        for (JInternalFrame frame : desktopPane.getAllFrames()) {\n            if (frame instanceof AbstractWindow) {\n                frame.dispose();\n            }\n        }\n    }\n\n    public void updateDesktopPane() {\n        for (JInternalFrame frame : desktopPane.getAllFrames()) {\n            if (frame instanceof AbstractWindow) {\n                ((AbstractWindow) frame).updateLabels();\n            }\n        }\n        updateMainFrame();\n    }\n\n    public void updateMainFrame() {\n        setJMenuBar(MenuBarBuilder.buildMenuBar(this));\n        desktopPane.revalidate();\n        desktopPane.repaint();\n    }\n\n    public void restoreAllWindows() {\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java b/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java
+--- a/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java	
++++ b/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java	
+@@ -55,7 +55,7 @@
+ 
+     protected AbstractWindow createLogWindow() {
+         AbstractWindow logWindow = new LogWindow(Logger.getDefaultLogSource());
+-        logWindow.setLocation(10, 10); // Расположение в верхнем левом углу
++        logWindow.setLocation(10, 10);
+         logWindow.setSize(300, 800);
+         Logger.debug(LocalizationManager.getString("logger.logsAreRunning"));
+         return logWindow;

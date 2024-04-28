@@ -1,10 +1,10 @@
 package org.robotgame.gui;
 
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
@@ -25,6 +25,7 @@ public class LocalizationManager {
             synchronized (lock) {
                 InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH);
                 props.load(in);
+                assert in != null;
                 in.close();
             }
         } catch (IOException e) {
@@ -45,7 +46,7 @@ public class LocalizationManager {
 
     public static synchronized boolean changeLanguage(String language) {
         Properties props = new Properties();
-        try (FileOutputStream out = new FileOutputStream(LocalizationManager.class.getClassLoader().getResource(PROPERTIES_FILE_PATH).getFile());
+        try (FileOutputStream out = new FileOutputStream(Objects.requireNonNull(LocalizationManager.class.getClassLoader().getResource(PROPERTIES_FILE_PATH)).getFile());
              InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH)) {
             synchronized (lock) {
                 props.load(in);
@@ -59,4 +60,20 @@ public class LocalizationManager {
             return false;
         }
     }
+
+    public static synchronized String getLanguage() {
+        Properties props = new Properties();
+        try {
+            synchronized (lock) {
+                InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH);
+                props.load(in);
+                assert in != null;
+                in.close();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return props.getProperty("Language");
+    }
+
 }

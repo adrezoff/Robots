@@ -1,7 +1,7 @@
 package org.robotgame.gui.GameControll;
 
 import org.junit.jupiter.api.Test;
-import org.robotgame.GameController.GameVisualizer;
+import org.robotgame.controller.GameVisualizer;
 
 import java.awt.*;
 

@@ -1,0 +1,70 @@
+Index: src/main/java/org/robotgame/Serialization/ProfileManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/robotgame/Serialization/ProfileManager.java b/src/main/java/org/robotgame/Serialization/ProfileManager.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/org/robotgame/Serialization/ProfileManager.java	
+@@ -0,0 +1,9 @@
++package org.robotgame.Serialization;
++
++import java.io.IOException;
++import java.util.List;
++
++public interface ProfileManager {
++    void saveProfiles(List<Object> profiles) throws IOException;
++    List<Object> loadProfiles() throws IOException, ClassNotFoundException;
++}
+Index: src/main/java/org/robotgame/Serialization/DefaultProfileManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/robotgame/Serialization/DefaultProfileManager.java b/src/main/java/org/robotgame/Serialization/DefaultProfileManager.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/org/robotgame/Serialization/DefaultProfileManager.java	
+@@ -0,0 +1,41 @@
++package org.robotgame.Serialization;
++
++import java.io.*;
++import java.util.ArrayList;
++import java.util.List;
++
++public class DefaultProfileManager implements ProfileManager {
++    private static final String FILE_PATH = "profiles/my_profile.dat";
++    private static final Object lock = new Object();
++
++    @Override
++    public void saveProfiles(List<Object> profiles) throws IOException {
++        synchronized (lock) {
++            try (ObjectOutputStream outputStream = new ObjectOutputStream(
++                    new FileOutputStream(FILE_PATH))) {
++                for (Object profile : profiles) {
++                    outputStream.writeObject(profile);
++                }
++            }
++        }
++    }
++
++    @Override
++    public List<Object> loadProfiles() throws IOException, ClassNotFoundException {
++        synchronized (lock) {
++            List<Object> profiles = new ArrayList<>();
++            try (ObjectInputStream inputStream = new ObjectInputStream(
++                    new FileInputStream(FILE_PATH))) {
++                while (true) {
++                    try {
++                        Object profile = inputStream.readObject();
++                        profiles.add(profile);
++                    } catch (EOFException e) {
++                        break;
++                    }
++                }
++            }
++            return profiles;
++        }
++    }
++}

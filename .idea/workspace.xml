@@ -5,7 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="add test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/FileStateLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/FileStateSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/Saveable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/StateLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/StateSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Entities/CameraMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/CameraMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Entities/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/GameController/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/Serialization/DefaultProfileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/Serialization/ProfileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/LocalizationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/LocalizationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/AbstractWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/AbstractWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/LogWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/LogWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/MiniMapWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingInternalFrame/MiniMapWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/RobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/RobotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/TargetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/TargetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/GameVisualizerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/GameVisualizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/Entities/Robot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/Entities/Target.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/GameController/GameVisualizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/LocalizationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/LocalizationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/GameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task2" />
+        <entry key="$PROJECT_DIR$" value="detached" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,21 +104,25 @@
     "JUnit.LogWindowSourceTest.testValidDeque.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task2",
+    "git-widget-placeholder": "task4",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/andrey/IdeaProjects/Robots/src/test/java/org/robotgame/gui",
+    "last_opened_file_path": "/Users/andrey/IdeaProjects/Robots/src/main/resources/profiles",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/profiles" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/robotgame" />
       <recent name="$PROJECT_DIR$/src/test/java/org/robotgame/gui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/profiles" />
       <recent name="$PROJECT_DIR$/src/main/resources/map" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -87,7 +132,7 @@
       <recent name="org.robotgame.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MinimapTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.robotgame.Main" />
       <module name="test" />
@@ -164,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MinimapTest" />
         <item itemvalue="JUnit.CameraMapTest" />
         <item itemvalue="JUnit.CameraMapTest.testUpdateCameraMapPosition" />
         <item itemvalue="JUnit.LocalizationManagerTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +345,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="return back and replace struct in log queue" />
-    <MESSAGE value="refactor code" />
     <MESSAGE value="finish coding task1" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="fix bug task1" />
@@ -310,6 +354,7 @@
     <MESSAGE value="fix bugs" />
     <MESSAGE value="add map, and moving entries" />
     <MESSAGE value="add test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
   </component>
 </project>
