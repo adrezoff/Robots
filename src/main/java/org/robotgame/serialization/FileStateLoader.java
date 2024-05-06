@@ -6,25 +6,39 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import org.robotgame.gui.LocalizationManager;
+import java.net.URL;
+import java.util.*;
+
 
 /**
  * Класс для загрузки состояния из файла.
  * Реализует интерфейс StateLoader.
  */
 public class FileStateLoader extends StateLoader {
-    private static final String STORAGE_FILE_PATH = "profiles/.temp";
+    private static final String STORAGE_FILE_PATH = "profiles";
+
+    private static final List<String>  listNamesProfiles;
 
     private final File storeFile;
+
+    static {
+        listNamesProfiles = new ArrayList<>();
+        URL url = FileStateLoader.class.getClassLoader().getResource(STORAGE_FILE_PATH);
+        if (url != null) {
+            File[] arr = new File(url.getFile()).listFiles();
+            assert arr != null;
+            for (File fileProfile : arr) {
+                listNamesProfiles.add(fileProfile.getName().replaceFirst(".temp", ""));
+            }
+        }
+    }
     /**
      * Конструктор по умолчанию.
      * Определяет путь к файлу хранения состояния.
      */
-    public FileStateLoader() {
+    public FileStateLoader(String id) {
         String projectDir = new File("src/main/resources").getAbsolutePath();
-        storeFile = new File(projectDir, STORAGE_FILE_PATH);
+        storeFile = new File(projectDir, STORAGE_FILE_PATH+"/"+id+".temp");
     }
     /**
      * Загружает состояние из файла.
@@ -41,9 +55,6 @@ public class FileStateLoader extends StateLoader {
 
             JSONObject jsonData = new JSONObject(storeData);
 
-            // Получаем язык из сохраненных данных и устанавливаем соответствующую локаль
-            String language = jsonData.getString("language");
-            LocalizationManager.changeLanguage(language);
 
             Map<String, State> states = new HashMap<>();
             JSONObject jsonStates = jsonData.getJSONObject("states");
@@ -62,5 +73,9 @@ public class FileStateLoader extends StateLoader {
         }
 
         return null;
+    }
+
+    public static Object[] arrayNamesProfiles() {
+        return listNamesProfiles.toArray();
     }
 }

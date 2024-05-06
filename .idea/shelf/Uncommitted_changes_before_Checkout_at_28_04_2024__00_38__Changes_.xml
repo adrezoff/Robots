@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_28_04_2024,_00_38_[Changes]" date="1714246702980" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_04_2024,_00_38_[Changes]/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 28.04.2024, 00:38 [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" value="target/classes/org/robotgame/GameController/GameVisualizer.class" />
-    <option name="AFTER_PATH" value="target/classes/org/robotgame/GameController/GameVisualizer.class" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_04_2024,_00_38_[Changes]/GameVisualizer.class" />
-  </binary>
-</changelist>

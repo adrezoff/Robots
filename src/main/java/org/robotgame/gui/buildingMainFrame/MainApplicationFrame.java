@@ -1,5 +1,6 @@
 package org.robotgame.gui.buildingMainFrame;
 
+import org.robotgame.gui.Dialogue;
 import org.robotgame.gui.LocalizationManager;
 import org.robotgame.gui.buildingInternalFrame.AbstractWindow;
 import org.robotgame.gui.buildingInternalFrame.GameWindow;
@@ -23,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 public class MainApplicationFrame extends JFrame implements Saveable {
+    private String profileID;
     private JDesktopPane desktopPane;
     private AbstractWindow logWindow;
     private AbstractWindow gameWindow;
@@ -58,8 +60,7 @@ public class MainApplicationFrame extends JFrame implements Saveable {
                         JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE,
                         null, options, options[0]);
                 if (result == JOptionPane.YES_OPTION) {
-                    final StateSaver saver = new FileStateSaver();
-                    saver.save(getAllToSave());
+                    saving();
                     closeAllWindows();
 
                     dispose();
@@ -67,7 +68,25 @@ public class MainApplicationFrame extends JFrame implements Saveable {
                 }
             }
         });
-        setStates();
+        selectingProfile();
+    }
+    private void selectingProfile(){
+        boolean flagNewProfile = false;
+        while(profileID == null) {
+            int response = Dialogue.whatProfile();
+            if (response == 0) {
+                profileID = Dialogue.selectingProfile();
+            } else if (response == 1){
+                flagNewProfile = true;
+                profileID = Dialogue.createProfile();
+            }
+            else {
+                System.exit(0);
+            }
+        }
+        if (!flagNewProfile) {
+            setStates();
+        }
     }
 
     protected AbstractWindow createLogWindow() {
@@ -200,7 +219,7 @@ public class MainApplicationFrame extends JFrame implements Saveable {
     }
 
     private void setStates() {
-        final StateLoader loader = new FileStateLoader();
+        final StateLoader loader = new FileStateLoader(profileID);
         final Map<String, State> states = loader.load();
 
         if (null == states) {
@@ -233,5 +252,10 @@ public class MainApplicationFrame extends JFrame implements Saveable {
         }
         objectsToSave.add(this);
         return objectsToSave;
+    }
+
+    public void saving(){
+        final StateSaver saver = new FileStateSaver(profileID);
+        saver.save(getAllToSave());
     }
 }

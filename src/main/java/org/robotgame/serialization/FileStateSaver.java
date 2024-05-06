@@ -14,16 +14,16 @@ import java.util.List;
  * Реализует абстрактный класс StateSaver.
  */
 public class FileStateSaver extends StateSaver {
-    private static final String STORAGE_FILE_PATH = "profiles/.temp";
+    private static final String STORAGE_FILE_PATH = "profiles";
 
     final File storeFile;
     /**
      * Конструктор по умолчанию.
      * Определяет путь к файлу хранения состояния.
      */
-    public FileStateSaver() {
+    public FileStateSaver(String id) {
         String projectDir = new File("src/main/resources").getAbsolutePath();
-        storeFile = new File(projectDir, STORAGE_FILE_PATH);
+        storeFile = new File(projectDir, STORAGE_FILE_PATH+"/"+id+".temp");
     }
 
     /**
@@ -45,7 +45,6 @@ public class FileStateSaver extends StateSaver {
         final JSONObject jsonState = new JSONObject(obj.state().getStorage());
         final JSONObject jsonObj = new JSONObject();
 
-        jsonObj.put("language", LocalizationManager.getLanguage());
         jsonObj.put(obj.getName(), jsonState);
 
         try (FileOutputStream fos = new FileOutputStream(storeFile)) {
@@ -73,7 +72,6 @@ public class FileStateSaver extends StateSaver {
         storeFile.setWritable(true);
 
         JSONObject json = new JSONObject();
-        json.put("language", LocalizationManager.getLanguage());
 
         JSONObject statesJson = new JSONObject();
         for (Saveable obj : objs) {

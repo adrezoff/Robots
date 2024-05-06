@@ -17,7 +17,7 @@ public class MenuBarBuilder {
         JMenu lookAndFeelMenu = buildLookAndFeelMenu(menuBar);
         JMenu languageMenu = buildLanguageMenu(desktop);
         JMenu testMenu = buildTestMenu();
-        JMenuItem exitMenuItem = buildExitMenuItem();
+        JMenuItem exitMenuItem = buildExitMenuItem(desktop);
 
         menuBar.add(lookAndFeelMenu);
         menuBar.add(languageMenu);
@@ -65,7 +65,7 @@ public class MenuBarBuilder {
         return testMenu;
     }
 
-    private static JMenuItem buildExitMenuItem() {
+    private static JMenuItem buildExitMenuItem(MainApplicationFrame desktop) {
         JMenuItem exitMenuItem = new JMenuItem(LocalizationManager.getString("menu.exit"));
         exitMenuItem.setMnemonic(KeyEvent.VK_T);
 
@@ -80,6 +80,7 @@ public class MenuBarBuilder {
                         JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE,
                         null, options, options[0]);
                 if (result == JOptionPane.YES_OPTION) {
+                    desktop.saving();
                     System.exit(0);
                 }
             }
