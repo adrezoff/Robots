@@ -13,7 +13,7 @@ public class Dialogue {
         Object[] options = {LocalizationManager.getString("profile.saved"),
                 LocalizationManager.getString("profile.create")};
         return JOptionPane.showOptionDialog(null,
-                    LocalizationManager.getString("window.closing.message"),
+                    LocalizationManager.getString("profile.select"),
                     LocalizationManager.getString("confirmation"),
                     JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
                     null, options, options[0]);
