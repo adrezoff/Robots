@@ -1,7 +1,6 @@
 package org.robotgame.serialization;
 
 import org.json.JSONObject;
-import org.robotgame.gui.LocalizationManager;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -86,6 +85,13 @@ public class FileStateSaver extends StateSaver {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    void deletedFile(){
+        try {
+            storeFile.delete();
+        } catch (NullPointerException e){
             e.printStackTrace();
         }
     }

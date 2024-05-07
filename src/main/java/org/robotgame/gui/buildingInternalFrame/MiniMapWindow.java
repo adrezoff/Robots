@@ -23,7 +23,9 @@ public class MiniMapWindow extends AbstractWindow{
     @Override
     protected void closeWindow() {
     }
-
+    /**
+     * Обновление окошка MiniMapWindow.
+     */
     @Override
     public void updateLabels() {
         setTitle(LocalizationManager.getString("minimap.title"));

@@ -60,20 +60,4 @@ public class LocalizationManager {
             return false;
         }
     }
-
-    public static synchronized String getLanguage() {
-        Properties props = new Properties();
-        try {
-            synchronized (lock) {
-                InputStream in = LocalizationManager.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE_PATH);
-                props.load(in);
-                assert in != null;
-                in.close();
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return props.getProperty("Language");
-    }
-
 }

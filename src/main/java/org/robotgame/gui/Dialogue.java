@@ -6,6 +6,9 @@ import javax.swing.*;
 import java.util.Objects;
 
 public class Dialogue {
+    /**
+     * Выбор действия с профилем.
+     */
     public static int whatProfile(){
         Object[] options = {LocalizationManager.getString("profile.saved"),
                 LocalizationManager.getString("profile.create")};
@@ -15,6 +18,9 @@ public class Dialogue {
                     JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
                     null, options, options[0]);
     }
+    /**
+     * Выбор профиля загрузке.
+     */
     public static String selectingProfile() {
         Object[] profiles = FileStateLoader.arrayNamesProfiles();
         if (profiles.length != 0) {
@@ -35,7 +41,9 @@ public class Dialogue {
         }
 
     }
-
+    /**
+     * Создание диалога создания профиля.
+     */
     public static String createProfile() {
         Object[] options2 = {LocalizationManager.getString("ok")};
         JOptionPane pane = new JOptionPane(LocalizationManager.getString("profile.enterName"),
