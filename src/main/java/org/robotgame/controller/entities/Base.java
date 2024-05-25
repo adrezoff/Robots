@@ -23,13 +23,12 @@ public class Base {
     }
     public boolean getBaseBuilt(){return baseBuilt;}
 
-    public void takePositionRobot(double positionRobotX, double positionRobotY){
-        if (Math.abs(positionX - positionRobotX) > 25 | Math.abs(positionY - positionRobotY) > 25){
-            healthPoint = applyLimits(healthPoint - 5,0,100);
-        }
-        else{
-            healthPoint = applyLimits(healthPoint + 25, 0, 100);
-        }
+    public void takeResources(int resources){
+        healthPoint = applyLimits(healthPoint + resources, 0, 100);
+    }
+
+    public void burnResources(){
+        healthPoint = applyLimits(healthPoint - 1,0,100);
     }
 
     private int applyLimits(int value, int min, int max) {

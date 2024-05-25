@@ -1,15 +1,15 @@
 package org.robotgame.controller;
 
-import org.robotgame.controller.entities.Base;
-import org.robotgame.controller.entities.CameraMap;
+import org.robotgame.controller.entities.*;
 import org.robotgame.controller.entities.Robot;
-import org.robotgame.controller.entities.Target;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.AffineTransform;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.imageio.ImageIO;
@@ -23,7 +23,10 @@ public class GameVisualizer extends JPanel implements Serializable {
     private final Target target;
     private final Base base;
     private final CameraMap cameraMap;
+    private final Resources resources;
+
     private Image backgroundImage;
+    private Image resourceImage;
 
     private static Timer initTimer() {
         Timer timer = new Timer("events generator", true);
@@ -37,11 +40,12 @@ public class GameVisualizer extends JPanel implements Serializable {
         target = new Target(startRobotX, startRobotY);
         base = new Base();
         cameraMap = new CameraMap(startRobotX, startRobotY, width, height,2000, 2000);
-
+        resources = new Resources();
 
         try {
             //backgroundImage = ImageIO.read(new File("src/main/resources/map/map.jpg"));
-            backgroundImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("map/map.jpg"));
+            backgroundImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("map/map.jpg")));
+            resourceImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("res/resources.jpg")));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -61,14 +65,13 @@ public class GameVisualizer extends JPanel implements Serializable {
         m_timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                base.takePositionRobot(robot.getPositionX(), robot.getPositionY());
+                robot.fillTank(resources.giveResource(robot.getPositionX(), robot.getPositionY()));
             }
-        }, 0,500);
+        }, 0,100);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 setTargetPosition(e.getX(), e.getY());
-                repaint();
             }
         });
 
@@ -76,8 +79,20 @@ public class GameVisualizer extends JPanel implements Serializable {
             @Override
             public void keyReleased(KeyEvent e) {
                 super.keyTyped(e);
-                if (e.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt())){
+                if (KeyEvent.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt())){
                     base.buildBase(robot.getPositionX(),robot.getPositionY());
+                    m_timer.schedule(new TimerTask() {
+                        @Override
+                        public void run() {
+                            base.burnResources();
+                            if (Math.abs(base.getPositionX() - robot.getPositionX()) <= 25 &&
+                                    Math.abs(base.getPositionY() - robot.getPositionY()) <= 25){
+                                if (base.getHealthPoint()<90) {
+                                    base.takeResources(robot.giveResource());
+                                }
+                            }
+                        }
+                    }, 0,500);
                 };
             }
         });
@@ -207,11 +222,13 @@ public class GameVisualizer extends JPanel implements Serializable {
         double cameraY = cameraMap.getY();
 
         drawBackgroundImage(g2d, cameraX, cameraY);
+        drawResources(g2d);
         drawRobot(g2d, robot.getPositionX() - cameraX, robot.getPositionY() - cameraY, robot.getDirection());
         drawTarget(g2d, target.getPositionX() - cameraX, target.getPositionY() - cameraY);
         if (base.getBaseBuilt()) {
             drawBase(g2d, base.getPositionX() - cameraX, base.getPositionY() - cameraY);
         }
+        drawRobotResources(g2d);
     }
 
 
@@ -287,6 +304,40 @@ public class GameVisualizer extends JPanel implements Serializable {
         g.drawImage(backgroundImage, destX, destY, destWidth, destHeight, srcX, srcY, srcX + srcWidth, srcY + srcHeight, this);
     }
 
+    private void drawResources(Graphics2D g){
+        ArrayList<ArrayList<Integer>> arrayResources = resources.getResources();
+        int cameraX = (int)cameraMap.getX();
+        int cameraY = (int)cameraMap.getY();
+        for (ArrayList<Integer> arrayResource : arrayResources) {
+            int resX = arrayResource.get(0);
+            int resY = arrayResource.get(1);
+            if (arrayResource.get(2) > 0) {
+                g.drawImage(resourceImage, resX - cameraX, resY - cameraY, 100, 50, this);
+            }
+        }
+    }
+
+    private void drawRobotResources(Graphics2D g){
+        int positionX = 500;
+        int positionY = 500;
+        int k = 0;
+        int robotResources = robot.getTank();
+
+        while (robotResources > 0) {
+            int res = Math.min(robotResources, 100);
+
+            g.setColor(Color.WHITE);
+            g.fillRect(positionX-k, positionY, 10, 40);
+            g.setColor(Color.GREEN);
+            g.fillRect(positionX-k, positionY + (int) (40 * (1 - res / 100.0)), 10, (int) (40 * (res / 100.0)));
+            g.setColor(Color.BLACK);
+            g.drawRect(positionX-k, positionY, 10, 40);
+
+            robotResources = robotResources - 100;
+            k = k + 20;
+        }
+    }
+
     public void updateScreenSize(){
         cameraMap.setScreenSize(getWidth(), getHeight());
     }
@@ -305,5 +356,8 @@ public class GameVisualizer extends JPanel implements Serializable {
     }
     public Base getBase(){
         return base;
+    }
+    public Resources getResources(){
+        return resources;
     }
 }

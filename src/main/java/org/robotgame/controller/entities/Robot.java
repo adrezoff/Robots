@@ -8,6 +8,7 @@ public class Robot {
 
     private double maxVelocity = 0.07;
     private double maxAngularVelocity = 0.01;
+    private int tank = 0;
 
     public Robot(double positionX, double positionY, double direction) {
         this.positionX = positionX;
@@ -64,7 +65,20 @@ public class Robot {
 
     }
 
+    public int giveResource(){
+        int res = Math.min(tank,10);
+        tank = Math.max(tank-10,0);
+        return res;
+    }
+
+    public void fillTank(int resources){
+        tank = tank+resources;
+    }
+
     public double getVelocity() {
         return velocity;
+    }
+    public int getTank(){
+        return tank;
     }
 }

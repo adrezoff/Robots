@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.io.IOException;
@@ -13,6 +14,7 @@ public class Minimap extends JPanel {
     private final Timer m_timer = initTimer();
     private GameVisualizer gameVisualizer;
     private Image backgroundImage;
+    private Image resourceImage;
 
     private static Timer initTimer() {
         Timer timer = new Timer("events generator", true);
@@ -24,6 +26,7 @@ public class Minimap extends JPanel {
 
         try {
             backgroundImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("map/map.jpg"));
+            resourceImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("res/resources.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -74,6 +77,7 @@ public class Minimap extends JPanel {
         double y = gameVisualizer.getRobot().getPositionY();
 
         drawRobot(g2d, x, y);
+        drawResources(g2d);
 
         if (gameVisualizer.getBase().getBaseBuilt()) {
             x = gameVisualizer.getBase().getPositionX();
@@ -128,6 +132,22 @@ public class Minimap extends JPanel {
         g.setColor(Color.BLACK);
         g.drawRect(baseCenterX, baseCenterY, 5, 5);
         g.drawRect(baseCenterX-10, baseCenterY-5, 25, 2);
+    }
+
+    private void drawResources(Graphics2D g){
+        // Определение масштабирования координат ресурсов
+        double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();
+
+        ArrayList<ArrayList<Integer>> arrayResources = gameVisualizer.getResources().getResources();
+
+        for (ArrayList<Integer> arrayResource : arrayResources) {
+            // Преобразование координат базы с учетом масштабирования
+            int resX = (int)(arrayResource.get(0) * scale);
+            int resY = (int)(arrayResource.get(1) * scale);
+            if (Math.abs(arrayResource.get(2)-50) < 50){
+                g.drawImage(resourceImage, resX, resY, 10, 5, this);
+            }
+        }
     }
 
     private void updateScreenSize() {

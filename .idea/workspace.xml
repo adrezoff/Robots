@@ -5,13 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="add test and update javadoc">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/profiles/прмпопр.temp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/res/resources.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/Dialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/gui/Dialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/new2.temp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/profiles/new2.temp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/new1.temp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/new2.temp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/прмпопр.temp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/MiniMapWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/MiniMapWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/profiles/new2.temp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/profiles/new2.temp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MenuBarBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MenuBarBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/log/LogLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/log/LogLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/profiles/new1.temp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/profiles/new2.temp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +120,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "task4",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/andrey/IdeaProjects/Robots/src/main/resources/profiles",
+    "last_opened_file_path": "C:/Users/victo/IdeaProjects/Robot/src/main/resources/res",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -103,6 +130,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\res" />
       <recent name="$PROJECT_DIR$/src/main/resources/profiles" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/org/robotgame" />
@@ -120,7 +148,20 @@
       <recent name="org.robotgame.gui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.robotgame.Main" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.robotgame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileStateLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
@@ -167,22 +208,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStateSaverTest.save_SingleObject_FileContentCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.robotgame.serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.robotgame.serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.robotgame.serialization.FileStateSaverTest" />
-      <option name="METHOD_NAME" value="save_SingleObject_FileContentCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
@@ -200,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.FileStateSaverTest" />
         <item itemvalue="JUnit.StateTest" />
         <item itemvalue="JUnit.FileStateLoaderTest" />
         <item itemvalue="JUnit.FileStateLoaderTest.load_FileExistsAndContainsValidData_ReturnsMapWithStates" />
-        <item itemvalue="JUnit.FileStateSaverTest.save_SingleObject_FileContentCorrect" />
       </list>
     </recent_temporary>
   </component>
