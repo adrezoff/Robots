@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="add test and update javadoc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/res/resources.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/new1.temp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/new2.temp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/прмпопр.temp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MenuBarBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MenuBarBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/log/LogLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/log/LogLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/profiles/new1.temp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/profiles/new2.temp" beforeDir="false" />
+    <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="adding resources">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715076538185</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding resources">
+      <option name="closed" value="true" />
+      <created>1716669285774</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716669285774</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -382,6 +357,7 @@
     <MESSAGE value="add test" />
     <MESSAGE value="add save load profile" />
     <MESSAGE value="add test and update javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test and update javadoc" />
+    <MESSAGE value="adding resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding resources" />
   </component>
 </project>

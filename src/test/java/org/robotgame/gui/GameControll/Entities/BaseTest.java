@@ -28,21 +28,17 @@ public class BaseTest {
     }
 
     @Test
-    void testTakePositionRobot_OutOfRange() {
+    void testBurnResources_OutOfRange() {
         base.buildBase(0, 0);
-        double positionRobotX = 50.0;
-        double positionRobotY = 50.0;
-        base.takePositionRobot(positionRobotX, positionRobotY);
+        base.burnResources();
 
-        assertEquals(95, base.getHealthPoint());
+        assertEquals(99, base.getHealthPoint());
     }
 
     @Test
-    void testTakePositionRobot_InRange() {
+    void testTakeResources_InRange() {
         base.buildBase(0, 0);
-        double positionRobotX = 5.0;
-        double positionRobotY = 5.0;
-        base.takePositionRobot(positionRobotX, positionRobotY);
+        base.takeResources(10);
 
         assertEquals(100, base.getHealthPoint());
     }
