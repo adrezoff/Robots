@@ -5,17 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="adding resources">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesLeft/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.movesRight/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/robot.standing/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/gui/buldingInteralFrame/GameVisualizerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/gui/GameControll/Entities/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/gui/GameControll/Entities/BaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +62,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2gzsdGcUpiI0m7XA6sRbJkhcnh6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,13 +73,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task4"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/victo/IdeaProjects/Robot/src/main/resources/robot.standing&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot.standing" />
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot.movesRight" />
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot.extracts" />
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot.movesLeft" />
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot\extracts" />
+      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.robotgame.Main" />
@@ -75,6 +123,15 @@
       <option name="presentableId" value="Default" />
       <updated>1716711827890</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding resources">
+      <option name="closed" value="true" />
+      <created>1716713913400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716713913400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

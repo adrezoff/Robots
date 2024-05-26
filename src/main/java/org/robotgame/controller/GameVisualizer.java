@@ -5,7 +5,6 @@ import org.robotgame.controller.entities.Robot;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.geom.AffineTransform;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -28,6 +27,7 @@ public class GameVisualizer extends JPanel implements Serializable {
     private Image backgroundImage;
     private Image resourceImage;
 
+    private ArrayList<Image[]> robotImage;
     private static Timer initTimer() {
         Timer timer = new Timer("events generator", true);
         return timer;
@@ -46,6 +46,16 @@ public class GameVisualizer extends JPanel implements Serializable {
             //backgroundImage = ImageIO.read(new File("src/main/resources/map/map.jpg"));
             backgroundImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("map/map.jpg")));
             resourceImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("res/resources.jpg")));
+
+            robotImage = new ArrayList<>();
+
+            for (String i:"extracts standing movesLeft movesRight ".split(" ")){
+                Image[] robotExtracts = new Image[10];
+                for (int i1=0;i1<10;i1++) {
+                    robotExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("robot."+i+"/"+String.valueOf(i1)+".png")));
+                }
+                robotImage.add(robotExtracts);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -70,6 +80,13 @@ public class GameVisualizer extends JPanel implements Serializable {
                 }
             }
         }, 0,25);
+        m_timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                robot.setAction(resources, target.getPositionX());
+                robot.nextId();
+            }
+        },0,50);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -148,8 +165,10 @@ public class GameVisualizer extends JPanel implements Serializable {
     public void onModelUpdateEvent() {
         double distance = distance(target.getPositionX(), target.getPositionY(), robot.getPositionX(), robot.getPositionY());
         if (distance < 1) {
+            robot.setVelocity(0);
             return;
         }
+        robot.setVelocity(1);
 
         double angleToTarget = angleTo(robot.getPositionX(), robot.getPositionY(), target.getPositionX(), target.getPositionY());
 
@@ -247,20 +266,18 @@ public class GameVisualizer extends JPanel implements Serializable {
         int robotCenterX = round(x);
         int robotCenterY = round(y);
 
-        AffineTransform originalTransform = g.getTransform();
-
-        g.rotate(direction, robotCenterX, robotCenterY);
-
-        g.setColor(Color.CYAN);
-        fillOval(g, robotCenterX, robotCenterY, 30, 10);
-        g.setColor(Color.BLACK);
-        drawOval(g, robotCenterX, robotCenterY, 30, 10);
-        g.setColor(Color.WHITE);
-        fillOval(g, robotCenterX + 10, robotCenterY, 5, 5);
-        g.setColor(Color.BLACK);
-        drawOval(g, robotCenterX + 10, robotCenterY, 5, 5);
-
-        g.setTransform(originalTransform);
+        if (Objects.equals(robot.getAction(), "standing")) {
+            g.drawImage(robotImage.get(1)[robot.getIdImage()], robotCenterX - 30, robotCenterY - 70, 70, 70, this);
+        }
+        if (Objects.equals(robot.getAction(), "extracts")) {
+            g.drawImage(robotImage.get(0)[robot.getIdImage()], robotCenterX - 30, robotCenterY - 70, 70, 70, this);
+        }
+        if (Objects.equals(robot.getAction(), "movesLeft")) {
+            g.drawImage(robotImage.get(2)[robot.getIdImage()], robotCenterX - 30, robotCenterY - 70, 70, 70, this);
+        }
+        if (Objects.equals(robot.getAction(), "movesRight")) {
+            g.drawImage(robotImage.get(3)[robot.getIdImage()], robotCenterX - 30, robotCenterY - 70, 70, 70, this);
+        }
     }
 
     private void drawTarget(Graphics2D g, double x, double y) {
