@@ -19,6 +19,7 @@ public class GameVisualizer extends JPanel implements Serializable {
 
     private final Timer m_timer = initTimer();
     private final Robot robot;
+    private final ArrayList<Enemies> enemies;
     private final Target target;
     private final Base base;
     private final CameraMap cameraMap;
@@ -28,6 +29,7 @@ public class GameVisualizer extends JPanel implements Serializable {
     private Image resourceImage;
 
     private ArrayList<Image[]> robotImage;
+    private ArrayList<Image[]> EnemiesImage;
     private static Timer initTimer() {
         Timer timer = new Timer("events generator", true);
         return timer;
@@ -41,9 +43,9 @@ public class GameVisualizer extends JPanel implements Serializable {
         base = new Base();
         cameraMap = new CameraMap(startRobotX, startRobotY, width, height,2000, 2000);
         resources = new Resources();
+        enemies = new ArrayList<>();
 
         try {
-            //backgroundImage = ImageIO.read(new File("src/main/resources/map/map.jpg"));
             backgroundImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("map/map.jpg")));
             resourceImage = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("res/resources.jpg")));
 
@@ -55,6 +57,16 @@ public class GameVisualizer extends JPanel implements Serializable {
                     robotExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("robot."+i+"/"+String.valueOf(i1)+".png")));
                 }
                 robotImage.add(robotExtracts);
+            }
+
+            EnemiesImage = new ArrayList<>();
+
+            for (String i:"extracts standing movesLeft movesRight ".split(" ")){
+                Image[] EnemiesExtracts = new Image[10];
+                for (int i1=0;i1<10;i1++) {
+                    EnemiesExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("enemies."+i+"/"+String.valueOf(i1)+".png")));
+                }
+                EnemiesImage.add(EnemiesExtracts);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,14 +91,35 @@ public class GameVisualizer extends JPanel implements Serializable {
                     robot.fillTank(resources.giveResource(robot.getPositionX(), robot.getPositionY()));
                 }
             }
-        }, 0,25);
+        }, 0,50);
+
         m_timer.schedule(new TimerTask() {
             @Override
             public void run() {
                 robot.setAction(resources, target.getPositionX());
                 robot.nextId();
             }
-        },0,50);
+        },0,70);
+        m_timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (Enemies enemy : enemies) {
+                    enemy.setAction(base);
+                    enemy.nextId();
+                }
+            }
+        }, 0, 100);
+        m_timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (Enemies enemy : enemies) {
+                    if (Math.abs(base.getPositionX() - enemy.getPositionX()) <= 25 &&
+                            Math.abs(base.getPositionY() - enemy.getPositionY()) <= 25) {
+                        enemy.attackBase(base);
+                    }
+                }
+            }
+        }, 0, 80);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -101,7 +134,7 @@ public class GameVisualizer extends JPanel implements Serializable {
                 if (KeyEvent.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt()) && robot.getTank() >= 100){
                     robot.giveResource(100);
                     base.buildBase(robot.getPositionX(),robot.getPositionY());
-
+                    spawnEnemies();
                     m_timer.schedule(new TimerTask() {
                         @Override
                         public void run() {
@@ -143,8 +176,6 @@ public class GameVisualizer extends JPanel implements Serializable {
         target.setPositionY(y);
     }
 
-
-
     protected void onRedrawEvent() {
         EventQueue.invokeLater(this::repaint);
     }
@@ -163,6 +194,31 @@ public class GameVisualizer extends JPanel implements Serializable {
     }
 
     public void onModelUpdateEvent() {
+        for (Enemies enemy : enemies) {
+            double distanceToBase = distance(enemy.getPositionX(), enemy.getPositionY(), base.getPositionX(), base.getPositionY());
+            if (distanceToBase < 20) {
+                enemy.setVelocity(0);
+                continue;
+            }
+            enemy.setVelocity(1);
+
+            double angleToBase = angleTo(enemy.getPositionX(), enemy.getPositionY(), base.getPositionX(), base.getPositionY());
+
+            double angleDifference;
+            if (Math.abs(angleToBase - enemy.getDirection()) > Math.exp(-17)) {
+                angleDifference = angleToBase - enemy.getDirection();
+            } else {
+                angleDifference = Math.exp(-16);
+            }
+
+            if (Math.abs(angleDifference) > Math.PI) {
+                angleDifference -= Math.signum(angleDifference) * 2 * Math.PI;
+            }
+            double angularVelocity = enemy.getMaxAngularVelocity() * angleDifference;
+
+            moveEnemy(enemy, angularVelocity, 5);
+        }
+
         double distance = distance(target.getPositionX(), target.getPositionY(), robot.getPositionX(), robot.getPositionY());
         if (distance < 1) {
             robot.setVelocity(0);
@@ -185,7 +241,6 @@ public class GameVisualizer extends JPanel implements Serializable {
         double angularVelocity = robot.getMaxAngularVelocity() * angleDifference;
 
         moveRobot(angularVelocity, 5);
-
     }
 
     private static double applyLimits(double value, double min, double max) {
@@ -219,6 +274,28 @@ public class GameVisualizer extends JPanel implements Serializable {
         cameraMap.updateCameraMapPosition(robot.getPositionX(), robot.getPositionY());
     }
 
+    private void moveEnemy(Enemies enemy, double angularVelocity, double duration) {
+        double velocity = enemy.getMaxVelocity();
+        double newX = enemy.getPositionX() + velocity / angularVelocity *
+                (Math.sin(enemy.getDirection() + angularVelocity * duration) -
+                        Math.sin(enemy.getDirection()));
+        if (!Double.isFinite(newX)) {
+            newX = enemy.getPositionX() + velocity * duration * Math.cos(enemy.getDirection());
+        }
+        double newY = enemy.getPositionY() - velocity / angularVelocity *
+                (Math.cos(enemy.getDirection() + angularVelocity * duration) -
+                        Math.cos(enemy.getDirection()));
+        if (!Double.isFinite(newY)) {
+            newY = enemy.getPositionY() + velocity * duration * Math.sin(enemy.getDirection());
+        }
+
+        enemy.setPositionX(applyLimits(newX, 0, cameraMap.getMapSizeX()));
+        enemy.setPositionY(applyLimits(newY, 0, cameraMap.getMapSizeY()));
+
+        double newDirection = asNormalizedRadians(enemy.getDirection() + angularVelocity * duration);
+        enemy.setDirection(newDirection);
+    }
+
     private static double asNormalizedRadians(double angle) {
         while (angle < 0) {
             angle += 2 * Math.PI;
@@ -233,11 +310,19 @@ public class GameVisualizer extends JPanel implements Serializable {
         return (int) (value + 0.5);
     }
 
+    private void spawnEnemies() {
+        for (int i = 0; i < 5; i++) {
+            double positionX = Math.random() * cameraMap.getMapSizeX()-100;
+            double positionY = Math.random() * cameraMap.getMapSizeY()-100;
+            double direction = Math.random() * 2 * Math.PI;
+            enemies.add(new Enemies(positionX, positionY, direction));
+        }
+    }
+
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
 
-        // Получить текущие координаты камеры
         double cameraX = cameraMap.getX();
         double cameraY = cameraMap.getY();
 
@@ -249,9 +334,8 @@ public class GameVisualizer extends JPanel implements Serializable {
             drawBase(g2d, base.getPositionX() - cameraX, base.getPositionY() - cameraY);
         }
         drawRobotResources(g2d);
+        drawEnemies(g2d);
     }
-
-
 
     private static void fillOval(Graphics g, int centerX, int centerY, int diam1, int diam2) {
         g.fillOval(centerX - diam1 / 2, centerY - diam2 / 2, diam1, diam2);
@@ -356,6 +440,30 @@ public class GameVisualizer extends JPanel implements Serializable {
         }
     }
 
+    private void drawEnemies(Graphics2D g) {
+        double cameraX = cameraMap.getX();
+        double cameraY = cameraMap.getY();
+
+        for (Enemies enemy : enemies) {
+            int enemyCenterX = round(enemy.getPositionX() - cameraX);
+            int enemyCenterY = round(enemy.getPositionY() - cameraY);
+
+            if (Objects.equals(enemy.getAction(), "standing")) {
+                g.drawImage(EnemiesImage.get(1)[enemy.getIdImage()], enemyCenterX - 30, enemyCenterY - 70, 70, 70, this);
+            }
+            if (Objects.equals(enemy.getAction(), "extracts")) {
+                g.drawImage(EnemiesImage.get(0)[enemy.getIdImage()], enemyCenterX - 30, enemyCenterY - 70, 70, 70, this);
+            }
+            if (Objects.equals(enemy.getAction(), "movesLeft")) {
+                g.drawImage(EnemiesImage.get(2)[enemy.getIdImage()], enemyCenterX - 30, enemyCenterY - 70, 70, 70, this);
+            }
+            if (Objects.equals(enemy.getAction(), "movesRight")) {
+                g.drawImage(EnemiesImage.get(3)[enemy.getIdImage()], enemyCenterX - 30, enemyCenterY - 70, 70, 70, this);
+            }
+        }
+    }
+
+
     public void updateScreenSize(){
         cameraMap.setScreenSize(getWidth(), getHeight());
     }
@@ -377,5 +485,8 @@ public class GameVisualizer extends JPanel implements Serializable {
     }
     public Resources getResources(){
         return resources;
+    }
+    public ArrayList<Enemies> getEnemies(){
+        return enemies;
     }
 }

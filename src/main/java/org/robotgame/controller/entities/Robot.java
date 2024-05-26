@@ -22,14 +22,6 @@ public class Robot {
         this.positionY = positionY;
         this.direction = direction;
     }
-    public Robot(double positionX, double positionY, double direction, double maxVelocity, double maxAngularVelocity) {
-        this.positionX = positionX;
-        this.positionY = positionY;
-        this.direction = direction;
-        this.maxVelocity = maxVelocity;
-        this.maxAngularVelocity = maxAngularVelocity;
-    }
-
     public double getPositionX() {
         return positionX;
     }

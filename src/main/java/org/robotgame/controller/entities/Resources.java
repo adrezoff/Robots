@@ -8,7 +8,7 @@ import static java.lang.Math.abs;
 public class Resources{
     private final int quantityResources = 10;
 
-    private final ArrayList<ArrayList<Integer>> arrayResources = new ArrayList<ArrayList<Integer>>();
+    private final ArrayList<ArrayList<Integer>> arrayResources = new ArrayList<>();
 
     public Resources() {
         ThreadLocalRandom randomGenerator = ThreadLocalRandom.current();

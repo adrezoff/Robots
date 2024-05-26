@@ -24,9 +24,9 @@ public class Base {
     public boolean getBaseBuilt(){return baseBuilt;}
 
     public void takeResources(int resources){
-        healthPoint = applyLimits(healthPoint + (double) resources /5, 0, 100);
+        healthPoint = applyLimits(healthPoint + (double) resources / 5, 0, 100);
     }
-
+    public void takeDamage(double point){healthPoint = applyLimits(healthPoint - point, 0, 100);}
     private double applyLimits(double value, int min, int max) {
         if (value < min)
             return min;

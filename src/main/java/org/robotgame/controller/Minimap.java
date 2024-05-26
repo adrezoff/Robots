@@ -1,5 +1,7 @@
 package org.robotgame.controller;
 
+import org.robotgame.controller.entities.Enemies;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -37,18 +39,11 @@ public class Minimap extends JPanel {
                 onRedrawEvent();
             }
         }, 0, 7);
-        m_timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                onModelUpdateEvent();
-            }
-        }, 0, 5);
 
         addComponentListener(new ComponentAdapter() {
             @Override
             public void componentResized(ComponentEvent e) {
                 super.componentResized(e);
-                updateScreenSize();
                 repaint();
             }
         });
@@ -59,10 +54,6 @@ public class Minimap extends JPanel {
 
     protected void onRedrawEvent() {
         EventQueue.invokeLater(this::repaint);
-    }
-
-    protected void onModelUpdateEvent() {
-
     }
 
     public void paintComponent(Graphics g) {
@@ -78,6 +69,8 @@ public class Minimap extends JPanel {
 
         drawRobot(g2d, x, y);
         drawResources(g2d);
+        drawEnemies(g2d);
+
 
         if (gameVisualizer.getBase().getBaseBuilt()) {
             x = gameVisualizer.getBase().getPositionX();
@@ -97,31 +90,25 @@ public class Minimap extends JPanel {
     }
 
     private void drawRobot(Graphics2D g, double x, double y){
-        // Определение масштабирования координат робота
         double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();
 
-        // Преобразование координат робота с учетом масштабирования
         int robotCenterX = (int) (x * scale);
         int robotCenterY = (int) (y * scale);
 
-        // Нарисовать робота на миникарте
         g.setColor(Color.GREEN);
         fillOval(g, robotCenterX, robotCenterY, 5, 5);
         g.setColor(Color.BLACK);
         drawOval(g, robotCenterX, robotCenterY, 5, 5);
     }
+
     private void drawBase(Graphics2D g, double x, double y){
-        // Определение масштабирования координат базы
         double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();
 
-        // Преобразование координат базы с учетом масштабирования
         int baseCenterX = (int) (x * scale);
         int baseCenterY = (int) (y * scale);
 
-        //определение HP базы
         double hpBase = gameVisualizer.getBase().getHealthPoint();
 
-        // Нарисовать базу на миникарте
         g.setColor(Color.WHITE);
         g.fillRect(baseCenterX-10, baseCenterY-5, 25, 2);
         if (hpBase==0) {g.setColor(Color.RED);}
@@ -135,21 +122,32 @@ public class Minimap extends JPanel {
     }
 
     private void drawResources(Graphics2D g){
-        // Определение масштабирования координат ресурсов
         double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();
 
         ArrayList<ArrayList<Integer>> arrayResources = gameVisualizer.getResources().getResources();
 
         for (ArrayList<Integer> arrayResource : arrayResources) {
-            // Преобразование координат базы с учетом масштабирования
             int resX = (int)(arrayResource.get(0) * scale);
             int resY = (int)(arrayResource.get(1) * scale);
-            if (Math.abs(arrayResource.get(2)-50) < 50){
+            if (Math.abs(arrayResource.get(2)-100) < 100){
                 g.drawImage(resourceImage, resX, resY, 10, 5, this);
             }
         }
     }
+    private void drawEnemies(Graphics2D g){
+        double scale = (double) getWidth() / gameVisualizer.getCameraMap().getMapSizeX();
 
-    private void updateScreenSize() {
+        ArrayList<Enemies> enemies = gameVisualizer.getEnemies();
+        if (!enemies.isEmpty()) {
+            for (Enemies enemy : enemies) {
+                int enemyCenterX = (int) (enemy.getPositionX() * scale);
+                int enemyCenterY = (int) (enemy.getPositionY() * scale);
+
+                g.setColor(Color.RED);
+                fillOval(g, enemyCenterX, enemyCenterY, 5, 5);
+                g.setColor(Color.BLACK);
+                drawOval(g, enemyCenterX, enemyCenterY, 5, 5);
+            }
+        }
     }
 }
