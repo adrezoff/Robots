@@ -65,9 +65,9 @@ public class Robot {
 
     }
 
-    public int giveResource(){
-        int res = Math.min(tank,10);
-        tank = Math.max(tank-10,0);
+    public int giveResource(int quantity){
+        int res = Math.min(tank,quantity);
+        tank = Math.max(tank-quantity,0);
         return res;
     }
 

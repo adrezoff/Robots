@@ -4,54 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="adding resources">
+    <list default="true" id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="adding resources">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/gui/buldingInteralFrame/GameVisualizerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="detached" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;VictorKomm&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="fcb3ec15-9152-41d1-b02e-d2f98898077d" />
-        <option name="url" value="https://github.com/adrezoff/Robots.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2cxITTlqMopkLQ88lrgcEP1xnct" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2gzsdGcUpiI0m7XA6sRbJkhcnh6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -61,61 +41,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "JUnit.CameraMapTest.executor": "Run",
-    "JUnit.FileStateLoaderTest.executor": "Debug",
-    "JUnit.FileStateLoaderTest.load_FileExistsAndContainsValidData_ReturnsMapWithStates.executor": "Run",
-    "JUnit.FileStateSaverTest.executor": "Run",
-    "JUnit.FileStateSaverTest.save_SingleObject_FileContentCorrect.executor": "Run",
-    "JUnit.GameVisualizerTest.BlockedMove.executor": "Run",
-    "JUnit.GameVisualizerTest.TestMove.executor": "Run",
-    "JUnit.GameVisualizerTest.executor": "Run",
-    "JUnit.GameVisualizerTest.testMoveRobot.executor": "Run",
-    "JUnit.GameVisualizerTest.testSetTargetPosition.executor": "Run",
-    "JUnit.LocalizationManagerTest.TestChangeLanguage.executor": "Run",
-    "JUnit.LocalizationManagerTest.TestGetString2.executor": "Run",
-    "JUnit.LocalizationManagerTest.executor": "Run",
-    "JUnit.LogWindowSourceTest.executor": "Run",
-    "JUnit.LogWindowSourceTest.testAppend.executor": "Run",
-    "JUnit.LogWindowSourceTest.testRegisterListener.executor": "Run",
-    "JUnit.LogWindowSourceTest.testSize.executor": "Run",
-    "JUnit.LogWindowSourceTest.testUnregisterListener.executor": "Run",
-    "JUnit.LogWindowSourceTest.testValidDeque.executor": "Run",
-    "JUnit.StateTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task4",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/victo/IdeaProjects/Robot/src/main/resources/res",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+    "git-widget-placeholder": "task4"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\res" />
-      <recent name="$PROJECT_DIR$/src/main/resources/profiles" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/org/robotgame" />
-      <recent name="$PROJECT_DIR$/src/test/java/org/robotgame/gui" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/profiles" />
-      <recent name="$PROJECT_DIR$/src/main/resources/map" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.robotgame.serialization" />
-      <recent name="org.robotgame.gui" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.robotgame.Main" />
       <module name="test" />
@@ -129,234 +60,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStateLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.robotgame.serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.robotgame.serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.robotgame.serialization.FileStateLoaderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileStateLoaderTest.load_FileExistsAndContainsValidData_ReturnsMapWithStates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.robotgame.serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.robotgame.serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.robotgame.serialization.FileStateLoaderTest" />
-      <option name="METHOD_NAME" value="load_FileExistsAndContainsValidData_ReturnsMapWithStates" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileStateSaverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.robotgame.serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.robotgame.serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.robotgame.serialization.FileStateSaverTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.robotgame.serialization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.robotgame.serialization" />
-      <option name="MAIN_CLASS_NAME" value="org.robotgame.serialization.StateTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FileStateSaverTest" />
-        <item itemvalue="JUnit.StateTest" />
-        <item itemvalue="JUnit.FileStateLoaderTest" />
-        <item itemvalue="JUnit.FileStateLoaderTest.load_FileExistsAndContainsValidData_ReturnsMapWithStates" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-20.0.2-corretto-20.0.2.1-4caba194b151-d89c1816" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aa8d1d09-12b1-4491-93e6-d3b6c0ed511d" name="Changes" comment="" />
-      <created>1709046810907</created>
+      <changelist id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="adding resources" />
+      <created>1716711827890</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709046810907</updated>
+      <updated>1716711827890</updated>
     </task>
-    <task id="LOCAL-00001" summary="return back and replace struct in log queue">
-      <option name="closed" value="true" />
-      <created>1709362167881</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1709362167881</updated>
-    </task>
-    <task id="LOCAL-00002" summary="refactor code">
-      <option name="closed" value="true" />
-      <created>1709903707065</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1709903707065</updated>
-    </task>
-    <task id="LOCAL-00003" summary="finish coding task1">
-      <option name="closed" value="true" />
-      <created>1710184562001</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1710184562001</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix bug">
-      <option name="closed" value="true" />
-      <created>1710229702790</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1710229702790</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fix bug task1">
-      <option name="closed" value="true" />
-      <created>1710269701255</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1710269701255</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Begin task2: add closable and AbstractWindow in each internal frame. Add button &quot;Exit&quot; in menubar in main frame">
-      <option name="closed" value="true" />
-      <created>1710959495312</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1710959495312</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fix bugs with exit">
-      <option name="closed" value="true" />
-      <created>1711313599633</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1711313599633</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add realtime repaint localization">
-      <option name="closed" value="true" />
-      <created>1711381953424</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1711381953424</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add test">
-      <option name="closed" value="true" />
-      <created>1711447600116</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1711447600116</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fix bugs">
-      <option name="closed" value="true" />
-      <created>1712475783732</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712475783732</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add map, and moving entries">
-      <option name="closed" value="true" />
-      <created>1712496677003</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712496677004</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add test">
-      <option name="closed" value="true" />
-      <created>1712599343065</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1712599343065</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add test and update javadoc">
-      <option name="closed" value="true" />
-      <created>1715076538185</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1715076538185</updated>
-    </task>
-    <task id="LOCAL-00014" summary="adding resources">
-      <option name="closed" value="true" />
-      <created>1716669285774</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1716669285774</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="return back and replace struct in log queue" />
-    <MESSAGE value="finish coding task1" />
-    <MESSAGE value="fix bug" />
-    <MESSAGE value="fix bug task1" />
-    <MESSAGE value="Begin task2: add closable and AbstractWindow in each internal frame. Add button &quot;Exit&quot; in menubar in main frame" />
-    <MESSAGE value="fix bugs with exit" />
-    <MESSAGE value="add realtime repaint localization" />
-    <MESSAGE value="fix bugs" />
-    <MESSAGE value="add map, and moving entries" />
-    <MESSAGE value="refactor code" />
-    <MESSAGE value="add test" />
-    <MESSAGE value="add save load profile" />
-    <MESSAGE value="add test and update javadoc" />
     <MESSAGE value="adding resources" />
     <option name="LAST_COMMIT_MESSAGE" value="adding resources" />
   </component>

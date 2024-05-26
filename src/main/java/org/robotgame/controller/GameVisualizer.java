@@ -65,9 +65,11 @@ public class GameVisualizer extends JPanel implements Serializable {
         m_timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                robot.fillTank(resources.giveResource(robot.getPositionX(), robot.getPositionY()));
+                if (robot.getTank() < 200){
+                    robot.fillTank(resources.giveResource(robot.getPositionX(), robot.getPositionY()));
+                }
             }
-        }, 0,100);
+        }, 0,25);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -79,20 +81,19 @@ public class GameVisualizer extends JPanel implements Serializable {
             @Override
             public void keyReleased(KeyEvent e) {
                 super.keyTyped(e);
-                if (KeyEvent.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt())){
+                if (KeyEvent.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt()) && robot.getTank() >= 100){
+                    robot.giveResource(100);
                     base.buildBase(robot.getPositionX(),robot.getPositionY());
+
                     m_timer.schedule(new TimerTask() {
                         @Override
                         public void run() {
-                            base.burnResources();
                             if (Math.abs(base.getPositionX() - robot.getPositionX()) <= 25 &&
                                     Math.abs(base.getPositionY() - robot.getPositionY()) <= 25){
-                                if (base.getHealthPoint()<90) {
-                                    base.takeResources(robot.giveResource());
-                                }
+                                base.takeResources(robot.giveResource(5));
                             }
                         }
-                    }, 0,500);
+                    }, 0,100);
                 };
             }
         });

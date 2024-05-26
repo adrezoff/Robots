@@ -119,7 +119,7 @@ public class Minimap extends JPanel {
         int baseCenterY = (int) (y * scale);
 
         //определение HP базы
-        int hpBase = gameVisualizer.getBase().getHealthPoint();
+        double hpBase = gameVisualizer.getBase().getHealthPoint();
 
         // Нарисовать базу на миникарте
         g.setColor(Color.WHITE);

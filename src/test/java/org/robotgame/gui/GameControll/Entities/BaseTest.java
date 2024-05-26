@@ -28,14 +28,6 @@ public class BaseTest {
     }
 
     @Test
-    void testBurnResources_OutOfRange() {
-        base.buildBase(0, 0);
-        base.burnResources();
-
-        assertEquals(99, base.getHealthPoint());
-    }
-
-    @Test
     void testTakeResources_InRange() {
         base.buildBase(0, 0);
         base.takeResources(10);
