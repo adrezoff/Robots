@@ -14,6 +14,10 @@ import java.util.TimerTask;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
+/**
+ * Класс GameVisualizer отвечает за визуализацию игрового процесса,
+ * обновление модели игры и обработку событий пользовательского ввода.
+ */
 public class GameVisualizer extends JPanel implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -30,18 +34,28 @@ public class GameVisualizer extends JPanel implements Serializable {
 
     private ArrayList<Image[]> robotImage;
     private ArrayList<Image[]> EnemiesImage;
+
+    /**
+     * Инициализирует таймер для генерации событий.
+     * @return Таймер.
+     */
     private static Timer initTimer() {
         Timer timer = new Timer("events generator", true);
         return timer;
     }
 
+    /**
+     * Конструктор GameVisualizer. Инициализирует игровые объекты и настраивает таймеры для обновления модели и перерисовки.
+     * @param width Ширина игрового окна.
+     * @param height Высота игрового окна.
+     */
     public GameVisualizer(int width, int height) {
         int startRobotX = 100;
         int startRobotY = 100;
         robot = new Robot(startRobotX, startRobotY, 0);
         target = new Target(startRobotX, startRobotY);
         base = new Base();
-        cameraMap = new CameraMap(startRobotX, startRobotY, width, height,2000, 2000);
+        cameraMap = new CameraMap(startRobotX, startRobotY, width, height, 2000, 2000);
         resources = new Resources();
         enemies = new ArrayList<>();
 
@@ -51,20 +65,20 @@ public class GameVisualizer extends JPanel implements Serializable {
 
             robotImage = new ArrayList<>();
 
-            for (String i:"extracts standing movesLeft movesRight ".split(" ")){
+            for (String i : "extracts standing movesLeft movesRight ".split(" ")) {
                 Image[] robotExtracts = new Image[10];
-                for (int i1=0;i1<10;i1++) {
-                    robotExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("robot."+i+"/"+String.valueOf(i1)+".png")));
+                for (int i1 = 0; i1 < 10; i1++) {
+                    robotExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("robot." + i + "/" + i1 + ".png")));
                 }
                 robotImage.add(robotExtracts);
             }
 
             EnemiesImage = new ArrayList<>();
 
-            for (String i:"extracts standing movesLeft movesRight ".split(" ")){
+            for (String i : "extracts standing movesLeft movesRight ".split(" ")) {
                 Image[] EnemiesExtracts = new Image[10];
-                for (int i1=0;i1<10;i1++) {
-                    EnemiesExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("enemies."+i+"/"+String.valueOf(i1)+".png")));
+                for (int i1 = 0; i1 < 10; i1++) {
+                    EnemiesExtracts[i1] = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("enemies." + i + "/" + i1 + ".png")));
                 }
                 EnemiesImage.add(EnemiesExtracts);
             }
@@ -72,6 +86,17 @@ public class GameVisualizer extends JPanel implements Serializable {
             e.printStackTrace();
         }
 
+        setupTimers();
+        setupListeners();
+
+        setDoubleBuffered(true);
+        setFocusable(true);
+    }
+
+    /**
+     * Устанавливает таймеры для обновления модели и перерисовки.
+     */
+    private void setupTimers() {
         m_timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -87,11 +112,11 @@ public class GameVisualizer extends JPanel implements Serializable {
         m_timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                if (robot.getTank() < 200){
+                if (robot.getTank() < 200) {
                     robot.fillTank(resources.giveResource(robot.getPositionX(), robot.getPositionY()));
                 }
             }
-        }, 0,50);
+        }, 0, 50);
 
         m_timer.schedule(new TimerTask() {
             @Override
@@ -99,7 +124,7 @@ public class GameVisualizer extends JPanel implements Serializable {
                 robot.setAction(resources, target.getPositionX());
                 robot.nextId();
             }
-        },0,70);
+        }, 0, 70);
         m_timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -120,6 +145,12 @@ public class GameVisualizer extends JPanel implements Serializable {
                 }
             }
         }, 0, 80);
+    }
+
+    /**
+     * Устанавливает обработчики событий для мыши и клавиатуры.
+     */
+    private void setupListeners() {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -131,20 +162,20 @@ public class GameVisualizer extends JPanel implements Serializable {
             @Override
             public void keyReleased(KeyEvent e) {
                 super.keyTyped(e);
-                if (KeyEvent.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt()) && robot.getTank() >= 100){
+                if (KeyEvent.getKeyText(e.getKeyCode()).equals("B") && !(base.getBaseBuilt()) && robot.getTank() >= 100) {
                     robot.giveResource(100);
-                    base.buildBase(robot.getPositionX(),robot.getPositionY());
+                    base.buildBase(robot.getPositionX(), robot.getPositionY());
                     spawnEnemies();
                     m_timer.schedule(new TimerTask() {
                         @Override
                         public void run() {
                             if (Math.abs(base.getPositionX() - robot.getPositionX()) <= 25 &&
-                                    Math.abs(base.getPositionY() - robot.getPositionY()) <= 25){
+                                    Math.abs(base.getPositionY() - robot.getPositionY()) <= 25) {
                                 base.takeResources(robot.giveResource(5));
                             }
                         }
-                    }, 0,100);
-                };
+                    }, 0, 100);
+                }
             }
         });
 
@@ -156,11 +187,13 @@ public class GameVisualizer extends JPanel implements Serializable {
                 repaint();
             }
         });
-
-        setDoubleBuffered(true);
-        setFocusable(true);
     }
 
+    /**
+     * Устанавливает новую позицию цели.
+     * @param x Координата X цели.
+     * @param y Координата Y цели.
+     */
     public void setTargetPosition(int x, int y) {
         x = (int) (cameraMap.getX() + x);
         y = (int) (cameraMap.getY() + y);
@@ -180,12 +213,28 @@ public class GameVisualizer extends JPanel implements Serializable {
         EventQueue.invokeLater(this::repaint);
     }
 
+    /**
+     * Вычисляет растояние между двумя точками.
+     * @param x1 Координата X начальной точки.
+     * @param y1 Координата Y начальной точки.
+     * @param x2 Координата X конечной точки.
+     * @param y2 Координата Y конечной точки.
+     * @return Растояние.
+     */
     private static double distance(double x1, double y1, double x2, double y2) {
         double diffX = x1 - x2;
         double diffY = y1 - y2;
         return Math.sqrt(diffX * diffX + diffY * diffY);
     }
 
+    /**
+     * Вычисляет угол между двумя точками.
+     * @param fromX Координата X начальной точки.
+     * @param fromY Координата Y начальной точки.
+     * @param toX Координата X конечной точки.
+     * @param toY Координата Y конечной точки.
+     * @return Угол в радианах.
+     */
     private static double angleTo(double fromX, double fromY, double toX, double toY) {
         double diffX = toX - fromX;
         double diffY = toY - fromY;
@@ -193,6 +242,9 @@ public class GameVisualizer extends JPanel implements Serializable {
         return asNormalizedRadians(Math.atan2(diffY, diffX));
     }
 
+    /**
+     * Обработчик события обновления модели.
+     */
     public void onModelUpdateEvent() {
         for (Enemies enemy : enemies) {
             double distanceToBase = distance(enemy.getPositionX(), enemy.getPositionY(), base.getPositionX(), base.getPositionY());
@@ -243,6 +295,13 @@ public class GameVisualizer extends JPanel implements Serializable {
         moveRobot(angularVelocity, 5);
     }
 
+    /**
+     * Применяет ограничения на значение.
+     * @param value Значение.
+     * @param min Минимальное значение.
+     * @param max Максимальное значение.
+     * @return Ограниченное значение.
+     */
     private static double applyLimits(double value, double min, double max) {
         if (value < min)
             return min;
@@ -296,6 +355,11 @@ public class GameVisualizer extends JPanel implements Serializable {
         enemy.setDirection(newDirection);
     }
 
+    /**
+     * Нормализует угол.
+     * @param angle Угол в радианах.
+     * @return Нормализованный угол.
+     */
     private static double asNormalizedRadians(double angle) {
         while (angle < 0) {
             angle += 2 * Math.PI;
@@ -306,10 +370,18 @@ public class GameVisualizer extends JPanel implements Serializable {
         return angle;
     }
 
+    /**
+     * Округление в большую сторону
+     * @param value Число.
+     * @return Большее целое.
+     */
     private static int round(double value) {
         return (int) (value + 0.5);
     }
 
+    /**
+     * Порождает врагов на игровой карте.
+     */
     private void spawnEnemies() {
         for (int i = 0; i < 5; i++) {
             double positionX = Math.random() * cameraMap.getMapSizeX()-100;
@@ -393,15 +465,15 @@ public class GameVisualizer extends JPanel implements Serializable {
     }
 
     private void drawBackgroundImage(Graphics2D g, double cameraX, double cameraY) {
-        int destX = 0; // Координата X верхнего левого угла области
-        int destY = 0; // Координата Y верхнего левого угла области
-        int destWidth = getWidth(); // Ширина области
-        int destHeight = getHeight(); // Высота области
+        int destX = 0;
+        int destY = 0;
+        int destWidth = getWidth();
+        int destHeight = getHeight();
 
-        int srcX = (int) cameraX; // Начальная координата X на изображении
-        int srcY = (int) cameraY; // Начальная координата Y на изображении
-        int srcWidth = getWidth(); // Ширина области на изображении
-        int srcHeight = getHeight(); // Высота области на изображении
+        int srcX = (int) cameraX;
+        int srcY = (int) cameraY;
+        int srcWidth = getWidth();
+        int srcHeight = getHeight();
 
         g.drawImage(backgroundImage, destX, destY, destWidth, destHeight, srcX, srcY, srcX + srcWidth, srcY + srcHeight, this);
     }
@@ -463,17 +535,10 @@ public class GameVisualizer extends JPanel implements Serializable {
         }
     }
 
-
-    public void updateScreenSize(){
-        cameraMap.setScreenSize(getWidth(), getHeight());
-    }
-
     public Point getTargetPoint() {
         return new Point(target.getPositionX(), target.getPositionY());
     }
-    public Point getRobotPoint() {
-        return new Point((int)robot.getPositionX(), (int)robot.getPositionY());
-    }
+
     public Robot getRobot(){
         return robot;
     }
@@ -488,5 +553,13 @@ public class GameVisualizer extends JPanel implements Serializable {
     }
     public ArrayList<Enemies> getEnemies(){
         return enemies;
+    }
+
+
+    /**
+     * Устанавливает размер экрана.
+     */
+    public void updateScreenSize(){
+        cameraMap.setScreenSize(getWidth(), getHeight());
     }
 }

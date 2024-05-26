@@ -14,7 +14,7 @@ public class Resources{
         ThreadLocalRandom randomGenerator = ThreadLocalRandom.current();
         for(int i = 0; i < quantityResources; i++){
             ArrayList<Integer> currResource = new ArrayList<Integer>();
-            currResource.add(randomGenerator.nextInt(2000));
+            currResource.add(randomGenerator.nextInt(1500));
             currResource.add(randomGenerator.nextInt(1500));
             currResource.add(100);
             arrayResources.add(currResource);

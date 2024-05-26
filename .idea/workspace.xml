@@ -4,78 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="adding resources">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Enemies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.extracts/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesLeft/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.movesRight/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/enemies.standing/9.png" afterDir="false" />
+    <list default="true" id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="Add Enemies and damage for base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/Minimap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/CameraMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/CameraMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Robot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/AbstractWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingInternalFrame/LogWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MainApplicationFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MenuBarBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/gui/buildingMainFrame/MenuBarBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/log/LogLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/log/LogLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,11 +107,20 @@
       <option name="project" value="LOCAL" />
       <updated>1716713913400</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Enemies and damage for base">
+      <option name="closed" value="true" />
+      <created>1716759058567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716759058567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding resources" />
+    <MESSAGE value="Add Enemies and damage for base" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Enemies and damage for base" />
   </component>
 </project>
