@@ -13,7 +13,7 @@ import java.util.List;
  * Реализует абстрактный класс StateSaver.
  */
 public class FileStateSaver extends StateSaver {
-    private static final String STORAGE_FILE_PATH = "profiles";
+    private static final String STORAGE_FILE_PATH = System.getProperty("user.home");
 
     final File storeFile;
     /**
@@ -21,8 +21,7 @@ public class FileStateSaver extends StateSaver {
      * Определяет путь к файлу хранения состояния.
      */
     public FileStateSaver(String id) {
-        String projectDir = new File("src/main/resources").getAbsolutePath();
-        storeFile = new File(projectDir, STORAGE_FILE_PATH+"/"+id+".temp");
+        storeFile = new File(STORAGE_FILE_PATH+"/"+id+".temp");
     }
 
     /**

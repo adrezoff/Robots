@@ -10,16 +10,17 @@ public class Enemies {
     private double positionY;
     private double direction;
     private double velocity = 0;
-
-    private double maxVelocity = 0.07;
+    private double health = 0;
+    private double maxVelocity = 0.03;
     private double maxAngularVelocity = 0.01;
 
     private double damage = 0.01;
 
-    public Enemies(double positionX, double positionY, double direction) {
+    public Enemies(double positionX, double positionY, double direction, double health) {
         this.positionX = positionX;
         this.positionY = positionY;
         this.direction = direction;
+        this.health = health;
     }
 
     public double getPositionX() {

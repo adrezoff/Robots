@@ -6,56 +6,57 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
-
 
 /**
  * Класс для загрузки состояния из файла.
  * Реализует интерфейс StateLoader.
  */
 public class FileStateLoader extends StateLoader {
-    private static final String STORAGE_FILE_PATH = "profiles";
-
-    private static final List<String>  listNamesProfiles;
-
+    private static final String STORAGE_DIRECTORY = System.getProperty("user.home");
+    private static final List<String> listNamesProfiles = new ArrayList<>();
     private final File storeFile;
 
     static {
-        listNamesProfiles = new ArrayList<>();
-        URL url = FileStateLoader.class.getClassLoader().getResource(STORAGE_FILE_PATH);
-        if (url != null) {
-            File[] arr = new File(url.getFile()).listFiles();
-            assert arr != null;
-            for (File fileProfile : arr) {
-                listNamesProfiles.add(fileProfile.getName().replaceFirst(".temp", ""));
+        File storageDir = new File(STORAGE_DIRECTORY);
+        if (storageDir.exists() && storageDir.isDirectory()) {
+            File[] arr = storageDir.listFiles((dir, name) -> name.endsWith(".temp"));
+            if (arr != null) {
+                for (File fileProfile : arr) {
+                    listNamesProfiles.add(fileProfile.getName().replaceFirst("\\.temp$", ""));
+                }
             }
         }
     }
+
     /**
      * Конструктор по умолчанию.
      * Определяет путь к файлу хранения состояния.
      */
     public FileStateLoader(String id) {
-        String projectDir = new File("src/main/resources").getAbsolutePath();
-        storeFile = new File(projectDir, STORAGE_FILE_PATH+"/"+id+".temp");
+        storeFile = new File(STORAGE_DIRECTORY + "/" + id + ".temp");
     }
+
     /**
      * Загружает состояние из файла.
      *
      * @return карта состояний объектов
      */
+    @Override
     public Map<String, State> load() {
-        storeFile.setReadable(true);
+        if (!storeFile.exists() || !storeFile.isFile()) {
+            System.out.println("Файл не найден: " + storeFile.getAbsolutePath());
+            System.out.println("Загружен профиль по умолчанию");
+            return null;
+        }
 
         try (FileInputStream fis = new FileInputStream(storeFile)) {
             byte[] buffer = new byte[(int) storeFile.length()];
             fis.read(buffer);
-            String storeData = new String(buffer, "UTF-8");
+            String storeData = new String(buffer, StandardCharsets.UTF_8);
 
             JSONObject jsonData = new JSONObject(storeData);
-
-
             Map<String, State> states = new HashMap<>();
             JSONObject jsonStates = jsonData.getJSONObject("states");
 

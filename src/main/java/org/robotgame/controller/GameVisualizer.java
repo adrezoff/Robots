@@ -20,7 +20,6 @@ import javax.swing.*;
  */
 public class GameVisualizer extends JPanel implements Serializable {
     private static final long serialVersionUID = 1L;
-
     private final Timer m_timer = initTimer();
     private final Robot robot;
     private final ArrayList<Enemies> enemies;
@@ -28,7 +27,6 @@ public class GameVisualizer extends JPanel implements Serializable {
     private final Base base;
     private final CameraMap cameraMap;
     private final Resources resources;
-
     private Image backgroundImage;
     private Image resourceImage;
 
@@ -145,6 +143,12 @@ public class GameVisualizer extends JPanel implements Serializable {
                 }
             }
         }, 0, 80);
+        m_timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                resources.addNewResource();
+            }
+        }, 0, 10000);
     }
 
     /**
@@ -387,7 +391,7 @@ public class GameVisualizer extends JPanel implements Serializable {
             double positionX = Math.random() * cameraMap.getMapSizeX()-100;
             double positionY = Math.random() * cameraMap.getMapSizeY()-100;
             double direction = Math.random() * 2 * Math.PI;
-            enemies.add(new Enemies(positionX, positionY, direction));
+            enemies.add(new Enemies(positionX, positionY, direction, 100));
         }
     }
 

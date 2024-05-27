@@ -1,7 +1,5 @@
 package org.robotgame.serialization;
 
-import org.robotgame.gui.LocalizationManager;
-
 import java.util.HashMap;
 import java.util.Map;
 
