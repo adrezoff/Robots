@@ -123,4 +123,8 @@ public class Robot {
             }
         }
     }
+
+    public void setTank(int tank){
+        this.tank = tank;
+    }
 }

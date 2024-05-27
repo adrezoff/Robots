@@ -4,36 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="Add Java doc's">
-      <change afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+    <list default="true" id="d800f1ae-8549-4909-a505-8c4b96dbb472" name="Changes" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/EnemiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/ResourcesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/GameVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Enemies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/FileStateLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/FileStateLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/FileStateSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/FileStateSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/serialization/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/sad.temp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/robotgame/controller/entities/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/CameraMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/Entities/CameraMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/GameVisualizerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/robotgame/gui/GameControll/GameVisualizerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$8$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/GameVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/Minimap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/CameraMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/CameraMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Enemies.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Enemies.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/controller/entities/Resources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/FileStateSaver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/profiles/sad.temp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/robotgame/serialization/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/profiles/1.temp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/gui/GameControll/GameVisualizerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/gui/GameControll/GameVisualizerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/robotgame/log/LogWindowSourceTest$3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +59,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.EnemiesTest.executor": "Run",
+    "JUnit.EnemiesTest.testAttackBase.executor": "Run",
+    "JUnit.EnemiesTest.testSetAction.executor": "Run",
+    "JUnit.EnemiesTest.testSetVelocity.executor": "Run",
+    "JUnit.GameVisualizerTest.executor": "Run",
+    "JUnit.GameVisualizerTest.testOnModelUpdateEvent.executor": "Run",
+    "JUnit.ResourcesTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -92,23 +91,92 @@
       <recent name="C:\Users\victo\IdeaProjects\Robot\src\main\resources\robot" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.robotgame.Main" />
+  <component name="RunManager" selected="JUnit.GameVisualizerTest">
+    <configuration name="GameVisualizerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.robotgame.*" />
+          <option name="PATTERN" value="org.robotgame.gui.GameControll.Entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
+      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.GameVisualizerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameVisualizerTest.testCameraMapPositionUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.robotgame.gui.GameControll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
+      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.GameVisualizerTest" />
+      <option name="METHOD_NAME" value="testCameraMapPositionUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameVisualizerTest.testOnModelUpdateEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.robotgame.gui.GameControll.Entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
+      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.GameVisualizerTest" />
+      <option name="METHOD_NAME" value="testOnModelUpdateEvent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameVisualizerTest.testRobotFillsTank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.robotgame.gui.GameControll.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll" />
+      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.GameVisualizerTest" />
+      <option name="METHOD_NAME" value="testRobotFillsTank" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourcesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.robotgame.gui.GameControll.Entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.robotgame.gui.GameControll.Entities" />
+      <option name="MAIN_CLASS_NAME" value="org.robotgame.gui.GameControll.Entities.ResourcesTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GameVisualizerTest" />
+        <item itemvalue="JUnit.GameVisualizerTest.testCameraMapPositionUpdate" />
+        <item itemvalue="JUnit.GameVisualizerTest.testRobotFillsTank" />
+        <item itemvalue="JUnit.ResourcesTest" />
+        <item itemvalue="JUnit.GameVisualizerTest.testOnModelUpdateEvent" />
       </list>
     </recent_temporary>
   </component>
@@ -152,13 +220,22 @@
       <option name="project" value="LOCAL" />
       <updated>1716760215475</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1716790971513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716790971513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding resources" />
     <MESSAGE value="Add Enemies and damage for base" />
     <MESSAGE value="Add Java doc's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Java doc's" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>

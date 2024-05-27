@@ -34,4 +34,14 @@ public class Base {
             return max;
         return value;
     }
+
+    public void setPositionX(int x) {
+        this.positionX = x;
+    }
+    public void setPositionY(int y) {
+        this.positionY = y;
+    }
+    public void setHealthPoint(double point) {
+        this.healthPoint = point;
+    }
 }

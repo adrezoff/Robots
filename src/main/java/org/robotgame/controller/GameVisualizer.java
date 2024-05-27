@@ -386,7 +386,7 @@ public class GameVisualizer extends JPanel implements Serializable {
     /**
      * Порождает врагов на игровой карте.
      */
-    private void spawnEnemies() {
+    public void spawnEnemies() {
         for (int i = 0; i < 5; i++) {
             double positionX = Math.random() * cameraMap.getMapSizeX()-100;
             double positionY = Math.random() * cameraMap.getMapSizeY()-100;

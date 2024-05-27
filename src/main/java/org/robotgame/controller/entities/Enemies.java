@@ -105,7 +105,7 @@ public class Enemies {
         }
     }
 
-    private double distance(double x1, double y1, double x2, double y2) {
+    public double distance(double x1, double y1, double x2, double y2) {
         double diffX = x1 - x2;
         double diffY = y1 - y2;
         return Math.sqrt(diffX * diffX + diffY * diffY);
@@ -113,5 +113,9 @@ public class Enemies {
 
     public void attackBase(Base base) {
         base.takeDamage(damage);
+    }
+
+    public double getDamage(){
+        return this.damage;
     }
 }
